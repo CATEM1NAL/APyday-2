@@ -16,10 +16,12 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v4
 
       # Create zip and release
       - name: Zip Release
@@ -27,7 +29,7 @@ jobs:
         with:
           type: 'zip'
           filename: 'APyday-2.zip'
-          exclusions: '/.git LICENSE README.md'
+          exclusions: '*.git* LICENSE README.md'
       - uses: ncipollo/release-action@v1
         with:
           artifacts: 'APyday-2.zip'
