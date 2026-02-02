@@ -29,7 +29,7 @@ jobs:
         with:
           type: 'zip'
           filename: 'APyday-2.zip'
-          path: '/APyday 2/'
+          exclusions: '*.git* meta.json README.md LICENSE'
       - uses: ncipollo/release-action@v1
         with:
           artifacts: 'APyday-2.zip'
