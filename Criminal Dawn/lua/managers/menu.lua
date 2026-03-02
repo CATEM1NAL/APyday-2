@@ -2,6 +2,8 @@ local APD2FileIdent = "[APD2>menu] "
 
 dofile(APD2Path .. "lua/archipelago/client_bridge.lua")
 
+APD2StartedGame = false -- start_the_game() runs twice with mutators active
+
 -- PLAY BUTTON
 function MenuCallbackHandler:apd2_create_lobby()
   apd2_poll_client()
@@ -182,69 +184,48 @@ end)
 
 
 Hooks:PreHook(MenuCallbackHandler, "start_the_game", "apd2_prestartheist", function(self)
-  if not Utils:IsInGameState() and NetworkHelper:IsHost() then
+  if not APD2StartedGame and not Utils:IsInGameState() and NetworkHelper:IsHost() then
     -- Pick starting heist if no active run
     if not next(apd2_data.game.heists) then
       dofile(APD2Path .. "lua/archipelago/heist_selector.lua")
       apd2_next_heist(0)
     end
-    
-    local APD2NextHeist = apd2_data.game.heists[#apd2_data.game.heists]
-    NetworkHelper:SendToPeers("APD2SyncFirstHeist", #apd2_data.game.heists)
 
-    -- Random mutators!
-    managers.mutators:reset_all_mutators()
+    NetworkHelper:SendToPeers("APD2SendHeistCount", #apd2_data.game.heists)
+
+    -- Random mutators
     dofile(APD2Path .. "lua/tables/mutators.lua")
-
-    local CurrentMutator = nil
-    for i = 1, #apd2_data.game.heists - 1 + apd2_data.x.mutators do
-      CurrentMutator = math.random(#apd2_mutators) or nil
-      if CurrentMutator then
-        managers.mutators:set_enabled("Mutator" .. apd2_mutators[CurrentMutator])
-        table.remove(apd2_mutators, CurrentMutator)
-      end
-    end
 
     -- Drop you straight into a heist
     local DiffIndex = math.min(#apd2_data.game.heists + apd2_data.x.diff, apd2_data.game.max_diff)
-    
+    local NextHeist = apd2_data.game.heists[#apd2_data.game.heists]
+
     self:start_job({
       difficulty = tweak_data.difficulties[DiffIndex + 1],
       one_down = true,
-      job_id = APD2NextHeist
+      job_id = NextHeist
     })
-    log(APD2FileIdent .. "Loading: " .. APD2NextHeist)
+    log(APD2FileIdent .. "Loading: " .. NextHeist)
   end
 end)
 
 Hooks:PostHook(MenuCallbackHandler, "start_the_game", "apd2_startheist", function(self)
-  if not Utils:IsInGameState() then
-    managers.mutators._lobby_delay = -1
-
-    -- double check for any last second items
+  if not APD2StartedGame and not Utils:IsInGameState() then
+    managers.mutators._lobby_delay = 0
+    -- check for any last second items
     apd2_get_ponr_upgrades()
     apd2_poll_client()
-    
-    --if NetworkHelper:IsHost() then
-    --  NetworkHelper:SendToPeers("APD2SyncLobbyPONR", apd2_data.game.ponr)
-    --end
+    APD2StartedGame = true
   end
 end)
 
-NetworkHelper:AddReceiveHook("APD2SyncFirstHeist", "apd2_sync_heistlist", function(data, sender)
+-- Receive number of heists for score calculation
+NetworkHelper:AddReceiveHook("APD2SendHeistCount", "apd2_sync_heistlist", function(data, sender)
   log(APD2FileIdent .. "Received heists from host ( " .. data .. " )")
   apd2_data.game.host_heists = tonumber(data)
   io.save_as_json(apd2_data, SavePath .. "apyday2.txt")
   log(APD2FileIdent .. "Saved " .. SavePath .. "apyday2.txt")
 end)
-
---NetworkHelper:AddReceiveHook("APD2SyncLobbyPONR", "apd2_sync_lobbyPONR", function(data, sender)
---  log(APD2FileIdent .. "Received PONR time from host (" .. data .. ")")
---  apd2_data.game.host_ponr = tonumber(data)
---  io.save_as_json(apd2_data, SavePath .. "apyday2.txt")
---  log(APD2FileIdent .. "Saved " .. SavePath .. "apyday2.txt")
---end)
-
 
 -- Resetting save also resets mod
 Hooks:PostHook(MenuManager, "do_clear_progress", "apd2_resetsave", function(self)

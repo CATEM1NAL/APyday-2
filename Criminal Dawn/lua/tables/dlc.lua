@@ -12,15 +12,15 @@ local throwable = apd2_weapon_tables.throwables
 local dlc_content = {
 
   -- Licensed content
-  rvd = { rvd = heist.tier4, dark = heist.tier4, mad = heist.tier5,
+  rvd = { rvd = heist.tier3, dark = heist.tier4, mad = heist.tier5,
           model70 = primary, x_sr2 = akimbo, corgi = primary, 
           g26 = secondary, sr2 = secondary, pl14 = secondary,
           kabar_tanto = melee, boxcutter = melee, zeus = melee, clean = melee },
 
   -- Armored Transport
-  armored_transport = { arm_fac = heist.tier2, arm_par = heist.tier2,
-                        arm_hcm = heist.tier2, arm_und = heist.tier2,
-                        arm_cro = heist.tier2, arm_for = heist.tier5 },
+  armored_transport = { arm_fac = heist.tier2, arm_par = heist.tier4,
+                        arm_hcm = heist.tier2, arm_und = heist.tier1,
+                        arm_cro = heist.tier3, arm_for = heist.tier5 },
 
   -- Gage LMG Pack
   gage_pack_lmg = { gerber = melee, kampfmesser = melee, rambo = melee,
@@ -30,7 +30,7 @@ local dlc_content = {
   gage_pack_snp = { m95 = primary, msr = primary, r93 = primary },
 
   -- Big Bank
-  big_bank = { big = heist.tier6, fal = primary },
+  big_bank = { big = heist.tier5, fal = primary },
 
   -- Gage Shotgun Pack
   gage_pack_shotgun = { benelli = primary, ksg = primary, striker = secondary,
@@ -41,7 +41,7 @@ local dlc_content = {
                         bayonet = melee, bullseye = melee, dingdong = melee, x46 = melee },
 
   -- Hotline Miami
-  hl_miami = { mia = heist.tier5, scorpion = secondary, tec9 = secondary, uzi = secondary,
+  hl_miami = { mia = heist.tier4, scorpion = secondary, tec9 = secondary, uzi = secondary,
                bat = melee, cleaver = melee, fireaxe = melee, machete = melee },
 
   -- Gage Historical Pack
@@ -57,7 +57,7 @@ local dlc_content = {
                             burglar_recovery = "Fresh Air" },
 
   -- The Diamond
-  hope_diamond = { mus = heist.tier6 },
+  hope_diamond = { mus = heist.tier5 },
 
   -- Dragan Character Pack
   character_pack_dragan = { vhs = primary, meat_cleaver = melee, infil_overdog = "Overdog",
@@ -94,7 +94,7 @@ local dlc_content = {
                            grind_ap_1 = "Endorphins Lv1", grind_ap_2 = "Endorphins Lv2" },
 
   -- Golden Grin Casino
-  kenaz = { kenaz = heist.tier6, sub2000 = primary, croupier_rake = melee,
+  kenaz = { kenaz = heist.tier5, sub2000 = primary, croupier_rake = melee,
             slot_lever = melee, switchblade = melee, taser = melee },
 
   -- Gage Ninja Pack
@@ -111,15 +111,15 @@ local dlc_content = {
             buck = melee, great = melee, morning = melee, wpn_prj_jav = throwable },
 
   -- Point Break Heists
-  berry = { pbr = heist.tier4, pbr2 = heist.tier5, sparrow = secondary,
+  berry = { pbr = heist.tier3, pbr2 = heist.tier4, sparrow = secondary,
             iceaxe = melee, pugio = melee, selfie = melee, gator = melee },
 
   -- Goat Simulator
-  peta = { peta = heist.tier6, m37 = secondary, pitchfork = melee,
+  peta = { peta = heist.tier4, m37 = secondary, pitchfork = melee,
            scoutknife = melee, shawn = melee, stick = melee },
 
   -- Wolf Pack
-  pal = { pal = heist.tier4, man = heist.tier5, china = secondary, nin = melee },
+  pal = { pal = heist.tier2, man = heist.tier4, china = secondary, nin = melee },
 
   -- Sydney Character Pack
   opera = { tecci = primary, wing = melee, anarch_main = "Blitzkrieg Bop",
@@ -131,7 +131,7 @@ local dlc_content = {
            biker_health_cd = "Road Captain", biker_health_plus = "Sgt-at-Arms", biker_armor_cd = "Prez" },
 
   -- Biker Heist
-  born = { born = heist.tier4, hajk = secondary, wpn_prj_hur = throwable },
+  born = { born = heist.tier3, hajk = secondary, wpn_prj_hur = throwable },
 
   -- John Wick Weapon Pack
   pim = { desertfox = primary, packrat = secondary, schakal = secondary, wpn_prj_target = throwable },
@@ -150,7 +150,7 @@ local dlc_content = {
   spa = { spa = heist.tier3, fish = heist.tier4, tti = primary, catch = melee },
 
   -- Gage Russian Weapon Pack
-  grv = { ak12 = primary, siltstone = primary, coal = secondary, oxide = melee },
+  grv = { flint = primary, siltstone = primary, coal = secondary, oxide = melee },
 
   -- Pencil Melee
   pn2 = { sword = melee },
@@ -163,28 +163,28 @@ local dlc_content = {
   mex = { mex = heist.tier5, mex_cooking = heist.tier5 },
 
   -- San Martin Bank
-  bex = { bex = heist.tier5 },
+  bex = { bex = heist.tier4 },
 
   -- Federales Weapon Pack
   afp = { x_beer = akimbo, x_czech = akimbo, x_stech = akimbo,
            beer = secondary, czech = secondary, stech = secondary },
 
   -- Breakfast in Tijuana
-  pex = { pex = heist.tier4 },
+  pex = { pex = heist.tier2 },
 
   -- Fugitive Weapon Pack
   atw = { m60 = primary, r700 = primary, x_holt = akimbo,
           holt = secondary },
 
   -- Buluc's Mansion
-  fex = { fex = heist.tier6 },
+  fex = { fex = heist.tier5 },
 
   -- Gunslinger Weapon Pack
   mxw = { sbl = primary, m1897 = primary, x_model3 = akimbo,
           model3 = secondary },
 
-  -- Dragon Pack
-  chas = { chas = heist.tier3 },
+  -- Dragon Heist
+  chas = { chas = heist.tier2 },
 
   -- Jiu Feng Smuggler Pack
   fawp = { m590 = primary, x_m1911 = akimbo, x_vityaz = akimbo,
@@ -195,7 +195,7 @@ local dlc_content = {
            pm9 = secondary },
 
   -- Black Cat
-  chca = { chca = heist.tier5 },
+  chca = { chca = heist.tier4 },
 
   -- Jiu Feng Smuggler Pack 3
   tawp = { shak12 = primary, x_type54 = akimbo,
@@ -209,7 +209,7 @@ local dlc_content = {
              maxim9 = secondary },
 
   -- Midland Ranch
-  ranc = { ranc = heist.tier4 },
+  ranc = { ranc = heist.tier3 },
 
   -- McShay Weapon Pack
   pxp1 = { hk51b = primary, scout = secondary, ms3gl = secondary },
@@ -220,7 +220,7 @@ local dlc_content = {
    -- why is there an akimbo variant of a primary weapon.
 
   -- Hostile Takeover
-  corp = { corp = heist.tier4 },
+  corp = { corp = heist.tier5 },
 
   -- McShay Weapon Pack 3
   pxp3 = { tkb = primary, hcar = primary, contender = secondary },

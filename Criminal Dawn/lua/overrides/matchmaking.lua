@@ -6,6 +6,6 @@ if apd2_data.game.seed then
   NetworkMatchMakingEPIC._BUILD_SEARCH_INTEREST_KEY = apd2_data.game.seed
   log (APD2FileIdent .. "Matchmaking key: " .. NetworkMatchMakingEPIC._BUILD_SEARCH_INTEREST_KEY)
 else
-  NetworkMatchMakingSTEAM._BUILD_SEARCH_INTEREST_KEY = nil
-  NetworkMatchMakingEPIC._BUILD_SEARCH_INTEREST_KEY = nil
+  NetworkMatchMakingSTEAM._BUILD_SEARCH_INTEREST_KEY = "NO ARCHIPELAGO SEED FOUND!"
+  NetworkMatchMakingEPIC._BUILD_SEARCH_INTEREST_KEY = "NO ARCHIPELAGO SEED FOUND!"
 end

@@ -82,7 +82,7 @@ function apd2_poll_client()
   end
   
   if not apd2_data.game.time_bonus and APD2Client.time_bonus then
-    log(APD2FileIdent .. "Setting time bonus amount")
+    log(APD2FileIdent .. "Setting time bonus value")
     apd2_data.game.time_bonus = 60 * APD2Client.time_bonus
     DataChanged = true
   end
@@ -338,6 +338,7 @@ function apd2_poll_client()
 
   -- Write to apyday2.txt if any values were updated
   if DataChanged then
+
     -- Pull upgrades from save file and split them into a table/index pair
     for _, upgrade in pairs(apd2_data.upgrades) do
       local tableName, upgradeName = upgrade:match("([^%-]+)%-(.+)")
@@ -362,6 +363,7 @@ function apd2_poll_client()
   
     for key, _ in pairs(apd2_data.unlocks) do
       if not Global.upgrades_manager.aquired[key] then
+        --log(APD2FileIdent .. "Unlocking " .. currentUpgrade)
         managers.upgrades:aquire(key)
       end
     end

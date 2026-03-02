@@ -10,13 +10,19 @@ if Global.mutators and Global.mutators.active_on_load and not next(activeMutator
   end
 end
 
+local mutatorCount = #activeMutators
+
+if not NetworkHelper:IsHost() then
+  mutatorCount = apd2_data.game.host_mutators or 0
+end
+
 local heistCount = #apd2_data.game.heists or 0
 
 if not NetworkHelper:IsHost() then
   heistCount = apd2_data.game.host_heists or 0
 end
 
-local APD2VictoryScore = (heistCount + difficulty_index) * (1 + #activeMutators) * 100
+local APD2VictoryScore = (heistCount + difficulty_index) * (1 + mutatorCount) * 100
 
 Hooks:PostHook(VictoryState, "at_enter", "apd2_heistwin", function(self)  
   -- calculates time remaining for next PONR

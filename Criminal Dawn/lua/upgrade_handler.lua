@@ -1,13 +1,15 @@
 local APD2FileIdent = "[APD2>upgrades] "
 
 Hooks:PreHook(PlayerManager, "aquire_default_upgrades", "apd2_upgradehandler", function(self)
-  tweak_data.skilltree.default_upgrades = { "player_hostage_trade", "player_special_enemy_highlight" }
+  tweak_data.skilltree.default_upgrades = { "player_hostage_trade", "player_special_enemy_highlight", "cable_tie" }
 
   for key, _ in pairs(Global.upgrades_manager.aquired) do
     if key ~= "amcar" and key ~= "glock_17" and key ~= "weapon" then
       if not apd2_data.unlocks[key] then
         managers.upgrades:unaquire(key)
         Global.player_manager.upgrades = {}
+        Global.player_manager.team_upgrades = {}
+        Global.player_manager.cooldown_upgrades = { cooldown = {} }
       end
     end
   end
@@ -32,7 +34,7 @@ Hooks:PreHook(PlayerManager, "aquire_default_upgrades", "apd2_upgradehandler", f
   
   for key, _ in pairs(apd2_data.unlocks) do
     if not Global.upgrades_manager.aquired[key] then
-      log(APD2FileIdent .. "Adding upgrade: " .. key)
+      log(APD2FileIdent .. "Unlocking " .. key)
       managers.upgrades:aquire(key)
     end
   end

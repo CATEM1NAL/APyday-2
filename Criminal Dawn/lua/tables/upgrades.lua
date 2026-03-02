@@ -41,9 +41,6 @@ apd2_upgrade_tables = {
     trip_mine_sensor_toggle = { name = "", desc = "Trip mines can activate sensor mode.",
       "trip_mine_sensor_toggle", "trip_mine_sensor_highlight", "trip_mine_can_switch_on_off"
     },
-    cable_tie = { name = "", desc = "Can cable tie civs.",
-      "cable_tie"
-    },
     
     -- Mastermind Skills
     player_revive_damage_reduction_1 = { name = "Combat Medic", desc = "30% damage reduction while reviving and for 5s after.",
@@ -58,8 +55,8 @@ apd2_upgrade_tables = {
     first_aid_kit_auto_recovery_1 = { name = "Uppers", desc = "FAKs in 5m are consumed when going down (20s cooldown).",
       "first_aid_kit_auto_recovery_1"
     },
-    cooldown_long_dis_revive = { name = "Inspire", desc = "Shout at teammates to give 20% movement/reload speed for 10s.",
-      "cooldown_long_dis_revive"
+    inspire_shout = { name = "Inspire", desc = "Shout at downed teammates to revive (once per 20s).\nShout at living teammates to give a 20% reload/movement speed bonus for 10s.",
+      "cooldown_long_dis_revive", "player_morale_boost"
     },
     team_damage_hostage_absorption = { name = "Forced Friendship", desc = "+0.5 absorption per hostage (up to 8 hostages).",
       "team_damage_hostage_absorption"
@@ -325,14 +322,11 @@ apd2_upgrade_tables = {
     player_temp_melee_kill_increase_reload_speed_1 = { name = "Mag Steal", desc = "50% faster reload for 10s on melee kill.",
       "player_temp_melee_kill_increase_reload_speed_1"
     },
-    player_counter_strike_melee = { name = "", desc = "",
+    player_counter_strike_melee = { name = "Counterstrike", desc = "Charging melee blocks enemy melee attacks.",
       "player_counter_strike_melee"
     },
-    player_counter_strike_spooc = { name = "Counterstrike", desc = "Charging melee blocks enemy melee attacks.",
+    player_counter_strike_spooc = { name = "Cloakerstrike", desc = "Charging melee blocks cloakers.",
       "player_counter_strike_spooc"
-    },
-    player_melee_damage_health_ratio_multiplier = { name = "Cloakerstrike", desc = "Charging melee blocks cloakers.",
-      "player_melee_damage_health_ratio_multiplier"
     },
     player_melee_damage_health_ratio_multiplier = { name = "Berserker", desc = "Melee/saw damage scales with health lost.",
       "player_melee_damage_health_ratio_multiplier"
