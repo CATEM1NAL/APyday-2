@@ -92,7 +92,6 @@ Global.CrimDawn.tables.upgrades = {
     },
     hostage_taker = {
       dlc_owned = true, upg_type = "loud",
-      count_req = "permaskills:3",
       "player_hostage_health_regen_addend_2"
     },
     headshot_faster_reload = {
@@ -1040,7 +1039,7 @@ Global.CrimDawn.tables.upgrades = {
                 "yakuza_recovery_3,burglar_recovery,crook_recovery,hitman_recovery_1,hitman_recovery_2," ..
                 "hitman_recovery_3,hitman_recovery_4,hitman_recovery_5,hitman_recovery_6,armorer_recovery," ..
                 "anarch_bullseye,biker_armour_plus,sicario_recovery,expres_1,expres_2,expres_3,socio_armor_1,socio_armor_2",
-                -- armour regen perks make no sense with this
+                -- armour regen perks don't do anything
       "player_armor_to_health_conversion"
     },
     stoic_negate = {

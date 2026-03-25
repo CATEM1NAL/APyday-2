@@ -1,14 +1,13 @@
 local upgrades = { skills = {}, perks = {}, stats = {}, deployable = {} }
 local loc = managers.localization
-local UpgradeStr, SkillHeader, PermaHeader
-local MenuTitle, MenuText, MenuButtons
+local UpgradeStr, PermaHeader
+local MenuTitle, MenuText
 
 local function PermaUpgrade(upg_name, count)
-  SkillHeader = true
   if upg_name == "permaskills" or upg_name == "permaperks" then
     local PermaType = upg_name:sub(6)
 
-    if not PermaHeader and PermaType == "skills" then
+    if not PermaHeader and PermaType == "skills" and Global.CrimDawn.data.x.skills > 0 then
       table.insert(upgrades[PermaType], string.upper("Perma-skills:"))
       PermaHeader = true
     end
@@ -19,7 +18,7 @@ local function PermaUpgrade(upg_name, count)
       table.insert(upgrades[PermaType], UpgradeStr)
     end
 
-  else -- Directly adding upgrade
+  else -- Directly add upgrade
     if not PermaHeader then
       table.insert(upgrades.skills, string.upper("Perma-skills:"))
       PermaHeader = true
@@ -35,13 +34,21 @@ if Global.CrimDawn.data.x.permaskills > 0 then PermaUpgrade("permaskills") end
 if Global.CrimDawn.data.x.lives > 0 then PermaUpgrade("player_drill_speed_multiplier", Global.CrimDawn.data.x.lives) end
 if Global.CrimDawn.data.x.drill > 0 then PermaUpgrade("player_additional_lives_", Global.CrimDawn.data.x.drill) end
 
-if Global.CrimDawn.data.x.permaperks > 0 then
-  table.insert(upgrades.perks, string.upper("Perma-perks:"))
-  PermaUpgrade("permaperks")
-  table.insert(upgrades.perks, string.upper("\nRandom Perks:"))
+if Global.CrimDawn.data.x.permaskills > 0 and Global.CrimDawn.data.x.skills > 0 then
+  table.insert(upgrades.skills, string.upper("\nRandom Skills:"))
 end
 
-if SkillHeader then table.insert(upgrades.skills, string.upper("\nRandom Skills:")) end
+if Global.CrimDawn.data.x.permaperks > 0 then
+  if Global.CrimDawn.data.x.perks > 0 then
+    table.insert(upgrades.perks, string.upper("Perma-perks:"))
+  end
+
+  PermaUpgrade("permaperks")
+
+  if Global.CrimDawn.data.x.perks > 0 then
+    table.insert(upgrades.perks, string.upper("\nRandom Perks:"))
+  end
+end
 
 for _, upgrade in ipairs(Global.CrimDawn.data.upgrades) do
   local tableName, upgradeName = upgrade:match("([^%-]+)%-(.+)")
@@ -53,7 +60,22 @@ for _, upgrade in ipairs(Global.CrimDawn.data.upgrades) do
   table.insert(upgrades[tableName], UpgradeStr)
 end
 
-local function UpgradeMenu()
+local function UpgradeMenu(Page)
+  local MenuButtons = {
+    [1] = { text = loc:text("crimdawn_upgrades_button_skills"),
+            callback = CrimDawn.DisplaySkills },
+    [2] = { text = loc:text("crimdawn_upgrades_button_perks"),
+            callback = CrimDawn.DisplayPerks },
+    [3] = { text = loc:text("crimdawn_upgrades_button_stats"),
+            callback = CrimDawn.DisplayStats },
+    [4] = { text = loc:text("crimdawn_upgrades_button_deploy"),
+            callback = CrimDawn.DisplayDeploy },
+    [5] = { text = loc:text("menu_back"),
+            is_cancel_button = true }
+  }
+
+  table.remove(MenuButtons, Page)
+
   return QuickMenu:new(
     MenuTitle,
     MenuText,
@@ -61,53 +83,26 @@ local function UpgradeMenu()
   )
 end
 
--- I was having so much trouble getting these menus to work correctly.
--- There's probably a better way of doing this, idk what it is though
 function CrimDawn.BuildUpgradeMenus()
-  local AllMenuButtons = {
-    [1] = { text = loc:text("crimdawn_upgrades_button_skills"),
-            callback = CrimDawn.DisplaySkills },
-    [2] = { text = loc:text("crimdawn_upgrades_button_perks"),
-            callback = CrimDawn_DisplayPerks },
-    [3] = { text = loc:text("crimdawn_upgrades_button_stats"),
-            callback = CrimDawn_DisplayStats },
-    [4] = { text = loc:text("crimdawn_upgrades_button_deploy"),
-            callback = CrimDawn_DisplayDeploy },
-    [5] = { text = loc:text("menu_back"),
-            is_cancel_button = true }
-  }
-
   MenuTitle = loc:text("crimdawn_upgrades_title_skills")
-  if next(upgrades.skills) then
-    MenuText = table.concat(upgrades.skills, "\n")
-    MenuButtons = deep_clone(AllMenuButtons)
-    table.remove(MenuButtons, 1)
+  if next(upgrades.skills) then MenuText = table.concat(upgrades.skills, "\n")
   else MenuText = loc:text("crimdawn_upgrades_none") end
-  CrimDawn.SkillsMenu = UpgradeMenu()
+  CrimDawn.SkillsMenu = UpgradeMenu(1)
 
   MenuTitle = loc:text("crimdawn_upgrades_title_perks")
-  if next(upgrades.perks) then
-    MenuText = table.concat(upgrades.perks, "\n")
-    MenuButtons = deep_clone(AllMenuButtons)
-    table.remove(MenuButtons, 2)
+  if next(upgrades.perks) then MenuText = table.concat(upgrades.perks, "\n")
   else MenuText = loc:text("crimdawn_upgrades_none") end
-  CrimDawn.PerksMenu = UpgradeMenu()
+  CrimDawn.PerksMenu = UpgradeMenu(2)
 
   MenuTitle = loc:text("crimdawn_upgrades_title_stats")
-  if next(upgrades.stats) then
-    MenuText = table.concat(upgrades.stats, "\n")
-    MenuButtons = deep_clone(AllMenuButtons)
-    table.remove(MenuButtons, 3)
+  if next(upgrades.stats) then MenuText = table.concat(upgrades.stats, "\n")
   else MenuText = loc:text("crimdawn_upgrades_none") end
-  CrimDawn.StatsMenu = UpgradeMenu()
+  CrimDawn.StatsMenu = UpgradeMenu(3)
 
   MenuTitle = loc:text("crimdawn_upgrades_title_deploy")
-  if next(upgrades.deployable) then
-    MenuText = table.concat(upgrades.deployable, "\n")
-    MenuButtons = deep_clone(AllMenuButtons)
-    table.remove(MenuButtons, 4)
+  if next(upgrades.deployable) then MenuText = table.concat(upgrades.deployable, "\n")
   else MenuText = loc:text("crimdawn_upgrades_none") end
-  CrimDawn.DeployMenu = UpgradeMenu()
+  CrimDawn.DeployMenu = UpgradeMenu(4)
 end
 
 function CrimDawn.DisplaySkills()
@@ -115,17 +110,17 @@ function CrimDawn.DisplaySkills()
   CrimDawn.SkillsMenu:Show()
 end
 
-function CrimDawn_DisplayPerks()
+function CrimDawn.DisplayPerks()
   CrimDawn.BuildUpgradeMenus()
   CrimDawn.PerksMenu:Show()
 end
 
-function CrimDawn_DisplayStats()
+function CrimDawn.DisplayStats()
   CrimDawn.BuildUpgradeMenus()
   CrimDawn.StatsMenu:Show()
 end
 
-function CrimDawn_DisplayDeploy()
+function CrimDawn.DisplayDeploy()
   CrimDawn.BuildUpgradeMenus()
   CrimDawn.DeployMenu:Show()
 end

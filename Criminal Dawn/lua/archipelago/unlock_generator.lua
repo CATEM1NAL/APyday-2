@@ -15,7 +15,7 @@ return false end
 
 -- Generate specific number of specific upgrade type
 function CrimDawn:RandomUpgrade(count, table_name)
-  self.Log(FileIdent, "Generating " .. count .. " random " .. table_name)
+  self.Log(FileIdent, "Generating " .. count .. " random " .. table_name .. " upgrades")
   local DisabledUpgrades = {}
   local AcquiredUpgrades = {}
 
@@ -24,11 +24,13 @@ function CrimDawn:RandomUpgrade(count, table_name)
     local TableName, key = upgrade:match("([^%-]+)%-(.+)")
     if TableName == table_name then
       AcquiredUpgrades[key] = true
+
       if Global.CrimDawn.tables.upgrades[table_name][key].disable then
         for item in Global.CrimDawn.tables.upgrades[table_name][key].disable:gmatch("([^,]+)") do
           DisabledUpgrades[item] = true
         end
       end
+
     end
   end
 
@@ -64,7 +66,6 @@ function CrimDawn:RandomUpgrade(count, table_name)
     if UpgType then self.Log(FileIdent, "Next upgrade type: " .. UpgType) end
 
     for key, data in pairs(Global.CrimDawn.tables.upgrades[table_name]) do
-      --self.Log(FileIdent, "checking if " .. data.name .. " is valid")
 
       -- Check if data value is met
       local CountMet
@@ -93,15 +94,13 @@ function CrimDawn:RandomUpgrade(count, table_name)
       (not data.upg_req or AnyObtained(UpgReq, "upgrades")) and
       (not data.item_req or AnyObtained(ItemReq, "unlocks")) and
       (not data.count_req or CountMet) then
-        --self.Log(FileIdent, data.name .. " added as candidate")
-        BaseTable[key] = data.name
+        BaseTable[key] = true
       end
     end
 
     -- Build working table from base table
     local WorkingTable = {}
     for key in pairs(BaseTable) do table.insert(WorkingTable, key) end
-    --Utils.PrintTable(WorkingTable)
 
     -- Abort if no upgrades
     if not next(WorkingTable) then
@@ -163,7 +162,7 @@ local function UnlockMenu(unlock_type)
 
   local UnlockMenu = QuickMenu:new(
     string.upper("New " .. unlock_type),
-    managers.localization:text("crimdawn_new_item" .. math.random(1,9)),
+    managers.localization:text("crimdawn_new_item" .. math.random(1,18)),
     UnlockButtons,
     true
   )
@@ -182,8 +181,10 @@ function CrimDawn.UnlockButton3()
 end
 
 function CrimDawn.UnlockItem(i)
+  CrimDawn.Log(FileIdent, "player chose " .. CrimDawn.state.unlockopt[i])
   Global.CrimDawn.data.unlocks[CrimDawn.state.unlockopt[i]] = true
   managers.upgrades:aquire(CrimDawn.state.unlockopt[i])
+
   for _, deployable in ipairs(Global.CrimDawn.tables.etc.deployables) do
     if CrimDawn.state.unlockopt[i] == deployable then
       CrimDawn:RandomUpgrade(1, "deployable")
@@ -206,23 +207,20 @@ function CrimDawn:RandomUnlock()
   local TableName = CrimDawn.state.upg_queue[1].TableName
   local WorkingTable = deep_clone(Global.CrimDawn.tables[BaseTable][TableName])
 
-  Utils.PrintTable(WorkingTable)
   for i = #WorkingTable, 1, -1 do
     if Global.CrimDawn.data.unlocks[WorkingTable[i]] then table.remove(WorkingTable, i) end
   end
-  Utils.PrintTable(WorkingTable)
 
   CrimDawn.state.unlockopt = {}
-
   for i = 1, math.min(3, #WorkingTable) do
     local UnlockIndex = math.random(#WorkingTable)
     CrimDawn.state.unlockopt[i] = WorkingTable[UnlockIndex]
     table.remove(WorkingTable, UnlockIndex)
   end
-  CrimDawn.Log(FileIdent, (CrimDawn.state.unlockopt[1] or "nil"))
-  CrimDawn.Log(FileIdent, (CrimDawn.state.unlockopt[2] or "nil"))
-  CrimDawn.Log(FileIdent, (CrimDawn.state.unlockopt[3] or "nil"))
-  Utils.PrintTable(WorkingTable)
+
+  CrimDawn.Log(FileIdent, TableName .. " choice 1: " .. (CrimDawn.state.unlockopt[1] or "nil"))
+  CrimDawn.Log(FileIdent, TableName .. " choice 2: " .. (CrimDawn.state.unlockopt[2] or "nil"))
+  CrimDawn.Log(FileIdent, TableName .. " choice 3: " .. (CrimDawn.state.unlockopt[3] or "nil"))
 
   if CrimDawn.state.unlockopt[1] then UnlockMenu(TableName)
   else table.remove(self.state.upg_queue, 1)
