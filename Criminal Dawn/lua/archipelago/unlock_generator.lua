@@ -162,7 +162,7 @@ local function UnlockMenu(unlock_type)
 
   local UnlockMenu = QuickMenu:new(
     string.upper("New " .. unlock_type),
-    managers.localization:text("crimdawn_new_item" .. math.random(1,18)),
+    managers.localization:text("crimdawn_new_item" .. math.random(1,25)),
     UnlockButtons,
     true
   )

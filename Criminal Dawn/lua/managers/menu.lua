@@ -116,7 +116,7 @@ Hooks:Add("MenuManagerBuildCustomMenus", "CrimDawn_MenuTweaks", function(menu_ma
     managers.localization:add_localized_strings({
       ["crimdawn_play_next_title"] = ordinal(Global.CrimDawn.data.game.run) ..
         " Criminal Dawn [" .. #Global.CrimDawn.data.game.heists .. "/" .. Global.CrimDawn.data.game.run_length .. "]",
-      ["crimdawn_play_next_desc"] = TimeCharacter .. " " .. math.floor(Global.CrimDawn.data.game.ponr / 60 or -1) .. " minutes remaining."
+      ["crimdawn_play_next_desc"] = TimeCharacter .. " " .. math.floor((Global.CrimDawn.data.game.ponr or 0) / 60) .. " minutes remaining."
     })
 
     if Global.CrimDawn.data.game.run == 1 then managers.localization:add_localized_strings({
@@ -243,11 +243,13 @@ end)
 Hooks:PostHook(MenuManager, "do_clear_progress", "CrimDawn_ResetSave", function(self)
   CrimDawn.Log(FileIdent, "Wiping save data")
   CrimDawn:Reset()
-  CrimDawn:WriteSave(FileIdent, "save reset")
+  io.save_as_json(Global.CrimDawn.data, CrimDawn.SaveFile)
 
-  CrimDawn.Log(FileIdent, "Wiping client data")
-  os.remove(CrimDawnClient.DataPath)
   CrimDawnClient:LoadData()
+  if CrimDawnClient.data then
+    CrimDawn.Log(FileIdent, "Wiping client data")
+    os.remove(CrimDawnClient.DataPath)
+  end
 
   setup:load_start_menu()
 end)
