@@ -1,4 +1,4 @@
-# Criminal Dawn FAQ
+# FAQ & Common Issues
 This page contains simple answers to common issues or questions you might have.
 
 ## How do I join a lobby in-game?
