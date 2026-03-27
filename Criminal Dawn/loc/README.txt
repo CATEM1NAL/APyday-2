@@ -6,7 +6,7 @@ ponr: the mod expects the correct number of rare PONR messages to exist, any les
       invalid strings. If you don't have ideas you can just duplicate existing PONR messages to fill
       them out. Also, message length is a MAJOR consideration for these. If the message is too long it
       will be cut off by the default HUD, so make sure to test longer messages. You can do this by
-      going to lua/ponr.lua:16 and changing "crimdawn_ponr_default" to "crimdawn_ponr_rareX" (where X is
+      going to lua/ponr.lua:17 and changing "crimdawn_ponr_default" to "crimdawn_ponr_rareX" (where X is
       the number of the string you want to test).
 
 menu: the current run is dynamically created through code. "crimdawn_first_run_title" is used exclusively
