@@ -67,7 +67,7 @@ Alternatively you can just use same-slot coop, with only a single YAML and playe
 Criminal Dawn connects to the same slot, and they will remain perfectly in sync - only one set of checks for the entire game, and no score cap
 shenanigans. This is the simplest and most foolproof way of setting up the mod.
 
-**^ Note that this does not mean everyone will have the same upgrades and unlocks!** These are still random per player! It simply means everyone
+**^ Note that this does not mean everyone will have the same upgrades and unlocks!** These are still random per player, it simply means everyone
 gets their own upgrades and unlocks *at the same time*.
 
 ## I don't like you and this APWorld concept sucks.
