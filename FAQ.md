@@ -42,6 +42,24 @@ The heists are grouped by tier (heist 1, 2, 3, 4, 5) - make sure you don't disab
 at once, or the game **will** crash. You need to own DLC heists for them to be in the pool, even if
 they're enabled.
 
+## How many upgrades are there?
+7 Perma-Skills, 7 Perma-Perks, 13 Skills, 13 Perks, and between 13 and 52 Stat Boosts.
+
+There are also 2 Drill Sawgeant upgrades and 2 Nine Lives upgrades.
+
+### Two Nine Lives upgrades?
+Yes! It turns out there's a second upgrade for Nine Lives in the base game which gives you 3 more
+downs instead of 1. Makes sense as to why it was never used, but it makes my life more convenient.
+
+### So all the upgrades in the mod are vanilla (even if unused)?
+Yep! Everything currently in the mod is something that already exists within the game. I haven't
+looked into making custom upgrades yet, but it is something I want to do eventually.
+
+### Those are some weird numbers.
+Correct! I was leaning into PAYDAY 2's playing card motif, so the perks and skills add up to 21.
+There are more references like this, for example the YAML setting for the number of score checks;
+368 is the max value of all cards in a deck plus four jokers (clowns).
+
 ## Can I use multiple save files to play multiple multiworlds at once?
 No. I have a concept for an automated save switching system that will allow you
 to jump between multiworlds without having to reset your multiworld data, but due to how PAYDAY 2
