@@ -180,7 +180,7 @@ Hooks:Add("MenuManagerBuildCustomMenus", "CrimDawn_MenuTweaks", function(menu_ma
 
     if RestructuredMenus then
       if RestructuredMenus.settings.lobby_add_contract_broker then
-        --MenuHelper:HideMenuItem(lobbymenu, "contract_broker")
+        MenuHelper:HideMenuItem(lobbymenu, "contract_broker")
       end
     end
   end

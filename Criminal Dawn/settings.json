@@ -109,20 +109,20 @@
     },
     {
       "type" : "toggle",
+      "id" : "crimdawn_watchdogs_wrapper",
+      "title" : "heist_watchdogs",
+      "description" : "crimdawn_settings_heist_desc",
+      "callback" : "CrimDawn_UpdateActiveContent",
+      "value" : "watchdogs_wrapper",
+      "default_value" : true
+    },
+    {
+      "type" : "toggle",
       "id" : "crimdawn_family",
       "title" : "heist_family",
       "description" : "crimdawn_settings_heist_desc",
       "callback" : "CrimDawn_UpdateActiveContent",
       "value" : "family",
-      "default_value" : true
-    },
-    {
-      "type" : "toggle",
-      "id" : "crimdawn_gallery",
-      "title" : "heist_gallery",
-      "description" : "crimdawn_settings_heist_desc",
-      "callback" : "CrimDawn_UpdateActiveContent",
-      "value" : "gallery",
       "default_value" : true
     },
     {
@@ -136,20 +136,11 @@
     },
     {
       "type" : "toggle",
-      "id" : "crimdawn_wwh",
-      "title" : "heist_wwh",
+      "id" : "crimdawn_gallery",
+      "title" : "heist_gallery",
       "description" : "crimdawn_settings_heist_desc",
       "callback" : "CrimDawn_UpdateActiveContent",
-      "value" : "wwh",
-      "default_value" : true
-    },
-    {
-      "type" : "toggle",
-      "id" : "crimdawn_watchdogs_wrapper",
-      "title" : "heist_watchdogs",
-      "description" : "crimdawn_settings_heist_desc",
-      "callback" : "CrimDawn_UpdateActiveContent",
-      "value" : "watchdogs_wrapper",
+      "value" : "gallery",
       "default_value" : true
     },
     {
@@ -172,11 +163,11 @@
     },
     {
       "type" : "toggle",
-      "id" : "crimdawn_arm_fac",
-      "title" : "heist_arm_fac",
-      "description" : "crimdawn_settings_dlc_desc",
+      "id" : "crimdawn_wwh",
+      "title" : "heist_wwh",
+      "description" : "crimdawn_settings_heist_desc",
       "callback" : "CrimDawn_UpdateActiveContent",
-      "value" : "arm_fac",
+      "value" : "wwh",
       "default_value" : true
     },
     {
@@ -186,6 +177,15 @@
       "description" : "crimdawn_settings_dlc_desc",
       "callback" : "CrimDawn_UpdateActiveContent",
       "value" : "arm_hcm",
+      "default_value" : true
+    },
+    {
+      "type" : "toggle",
+      "id" : "crimdawn_arm_fac",
+      "title" : "heist_arm_fac",
+      "description" : "crimdawn_settings_dlc_desc",
+      "callback" : "CrimDawn_UpdateActiveContent",
+      "value" : "arm_fac",
       "default_value" : true
     },
     {
@@ -221,56 +221,11 @@
     },
     {
       "type" : "toggle",
-      "id" : "crimdawn_run",
-      "title" : "heist_run",
-      "description" : "crimdawn_settings_heist_desc",
-      "callback" : "CrimDawn_UpdateActiveContent",
-      "value" : "run",
-      "default_value" : true
-    },
-    {
-      "type" : "toggle",
-      "id" : "crimdawn_sah",
-      "title" : "heist_sah",
-      "description" : "crimdawn_settings_heist_desc",
-      "callback" : "CrimDawn_UpdateActiveContent",
-      "value" : "sah",
-      "default_value" : true
-    },
-    {
-      "type" : "toggle",
-      "id" : "crimdawn_jolly",
-      "title" : "heist_jolly",
-      "description" : "crimdawn_settings_heist_desc",
-      "callback" : "CrimDawn_UpdateActiveContent",
-      "value" : "jolly",
-      "default_value" : true
-    },
-    {
-      "type" : "toggle",
-      "id" : "crimdawn_brb",
-      "title" : "heist_brb",
-      "description" : "crimdawn_settings_heist_desc",
-      "callback" : "CrimDawn_UpdateActiveContent",
-      "value" : "brb",
-      "default_value" : true
-    },
-    {
-      "type" : "toggle",
       "id" : "crimdawn_alex",
       "title" : "heist_alex",
       "description" : "crimdawn_settings_heist_desc",
       "callback" : "CrimDawn_UpdateActiveContent",
       "value" : "alex",
-      "default_value" : true
-    },
-    {
-      "type" : "toggle",
-      "id" : "crimdawn_kosugi",
-      "title" : "heist_kosugi",
-      "description" : "crimdawn_settings_heist_desc",
-      "callback" : "CrimDawn_UpdateActiveContent",
-      "value" : "kosugi",
       "default_value" : true
     },
     {
@@ -284,11 +239,11 @@
     },
     {
       "type" : "toggle",
-      "id" : "crimdawn_hox_3",
-      "title" : "heist_hox_3",
+      "id" : "crimdawn_kosugi",
+      "title" : "heist_kosugi",
       "description" : "crimdawn_settings_heist_desc",
       "callback" : "CrimDawn_UpdateActiveContent",
-      "value" : "hox_3",
+      "value" : "kosugi",
       "default_value" : true
     },
     {
@@ -298,6 +253,51 @@
       "description" : "crimdawn_settings_heist_desc",
       "callback" : "CrimDawn_UpdateActiveContent",
       "value" : "rat",
+      "default_value" : true
+    },
+    {
+      "type" : "toggle",
+      "id" : "crimdawn_hox_3",
+      "title" : "heist_hox_3",
+      "description" : "crimdawn_settings_heist_desc",
+      "callback" : "CrimDawn_UpdateActiveContent",
+      "value" : "hox_3",
+      "default_value" : true
+    },
+    {
+      "type" : "toggle",
+      "id" : "crimdawn_jolly",
+      "title" : "heist_jolly",
+      "description" : "crimdawn_settings_heist_desc",
+      "callback" : "CrimDawn_UpdateActiveContent",
+      "value" : "jolly",
+      "default_value" : true
+    },
+    {
+      "type" : "toggle",
+      "id" : "crimdawn_run",
+      "title" : "heist_run",
+      "description" : "crimdawn_settings_heist_desc",
+      "callback" : "CrimDawn_UpdateActiveContent",
+      "value" : "run",
+      "default_value" : true
+    },
+    {
+      "type" : "toggle",
+      "id" : "crimdawn_brb",
+      "title" : "heist_brb",
+      "description" : "crimdawn_settings_heist_desc",
+      "callback" : "CrimDawn_UpdateActiveContent",
+      "value" : "brb",
+      "default_value" : true
+    },
+    {
+      "type" : "toggle",
+      "id" : "crimdawn_sah",
+      "title" : "heist_sah",
+      "description" : "crimdawn_settings_heist_desc",
+      "callback" : "CrimDawn_UpdateActiveContent",
+      "value" : "sah",
       "default_value" : true
     },
     {
@@ -338,15 +338,6 @@
     },
     {
       "type" : "toggle",
-      "id" : "crimdawn_ranc",
-      "title" : "heist_ranc",
-      "description" : "crimdawn_settings_dlc_desc",
-      "callback" : "CrimDawn_UpdateActiveContent",
-      "value" : "ranc",
-      "default_value" : true
-    },
-    {
-      "type" : "toggle",
       "id" : "crimdawn_rvd",
       "title" : "heist_rvd",
       "description" : "crimdawn_settings_dlc_desc",
@@ -355,26 +346,17 @@
       "default_value" : true
     },
     {
+      "type" : "toggle",
+      "id" : "crimdawn_ranc",
+      "title" : "heist_ranc",
+      "description" : "crimdawn_settings_dlc_desc",
+      "callback" : "CrimDawn_UpdateActiveContent",
+      "value" : "ranc",
+      "default_value" : true
+    },
+    {
       "type" : "divider",
       "size" : 16
-    },
-    {
-      "type" : "toggle",
-      "id" : "crimdawn_red2",
-      "title" : "heist_red2",
-      "description" : "crimdawn_settings_heist_desc",
-      "callback" : "CrimDawn_UpdateActiveContent",
-      "value" : "red2",
-      "default_value" : true
-    },
-    {
-      "type" : "toggle",
-      "id" : "crimdawn_flat",
-      "title" : "heist_flat",
-      "description" : "crimdawn_settings_heist_desc",
-      "callback" : "CrimDawn_UpdateActiveContent",
-      "value" : "flat",
-      "default_value" : true
     },
     {
       "type" : "toggle",
@@ -383,24 +365,6 @@
       "description" : "crimdawn_settings_heist_desc",
       "callback" : "CrimDawn_UpdateActiveContent",
       "value" : "firestarter",
-      "default_value" : true
-    },
-    {
-      "type" : "toggle",
-      "id" : "crimdawn_shoutout_raid",
-      "title" : "heist_shoutout_raid",
-      "description" : "crimdawn_settings_heist_desc",
-      "callback" : "CrimDawn_UpdateActiveContent",
-      "value" : "shoutout_raid",
-      "default_value" : true
-    },
-    {
-      "type" : "toggle",
-      "id" : "crimdawn_glace",
-      "title" : "heist_glace",
-      "description" : "crimdawn_settings_heist_desc",
-      "callback" : "CrimDawn_UpdateActiveContent",
-      "value" : "glace",
       "default_value" : true
     },
     {
@@ -423,11 +387,38 @@
     },
     {
       "type" : "toggle",
-      "id" : "crimdawn_dark",
-      "title" : "heist_dark",
-      "description" : "crimdawn_settings_dlc_desc",
+      "id" : "crimdawn_shoutout_raid",
+      "title" : "heist_shoutout_raid",
+      "description" : "crimdawn_settings_heist_desc",
       "callback" : "CrimDawn_UpdateActiveContent",
-      "value" : "dark",
+      "value" : "shoutout_raid",
+      "default_value" : true
+    },
+    {
+      "type" : "toggle",
+      "id" : "crimdawn_red2",
+      "title" : "heist_red2",
+      "description" : "crimdawn_settings_heist_desc",
+      "callback" : "CrimDawn_UpdateActiveContent",
+      "value" : "red2",
+      "default_value" : true
+    },
+    {
+      "type" : "toggle",
+      "id" : "crimdawn_flat",
+      "title" : "heist_flat",
+      "description" : "crimdawn_settings_heist_desc",
+      "callback" : "CrimDawn_UpdateActiveContent",
+      "value" : "flat",
+      "default_value" : true
+    },
+    {
+      "type" : "toggle",
+      "id" : "crimdawn_glace",
+      "title" : "heist_glace",
+      "description" : "crimdawn_settings_heist_desc",
+      "callback" : "CrimDawn_UpdateActiveContent",
+      "value" : "glace",
       "default_value" : true
     },
     {
@@ -495,6 +486,15 @@
     },
     {
       "type" : "toggle",
+      "id" : "crimdawn_dark",
+      "title" : "heist_dark",
+      "description" : "crimdawn_settings_dlc_desc",
+      "callback" : "CrimDawn_UpdateActiveContent",
+      "value" : "dark",
+      "default_value" : true
+    },
+    {
+      "type" : "toggle",
       "id" : "crimdawn_fish",
       "title" : "heist_fish",
       "description" : "crimdawn_settings_dlc_desc",
@@ -526,42 +526,6 @@
     },
     {
       "type" : "toggle",
-      "id" : "crimdawn_dah",
-      "title" : "heist_dah",
-      "description" : "crimdawn_settings_heist_desc",
-      "callback" : "CrimDawn_UpdateActiveContent",
-      "value" : "dah",
-      "default_value" : true
-    },
-    {
-      "type" : "toggle",
-      "id" : "crimdawn_des",
-      "title" : "heist_des",
-      "description" : "crimdawn_settings_heist_desc",
-      "callback" : "CrimDawn_UpdateActiveContent",
-      "value" : "des",
-      "default_value" : true
-    },
-    {
-      "type" : "toggle",
-      "id" : "crimdawn_nmh",
-      "title" : "heist_nmh",
-      "description" : "crimdawn_settings_heist_desc",
-      "callback" : "CrimDawn_UpdateActiveContent",
-      "value" : "nmh",
-      "default_value" : true
-    },
-    {
-      "type" : "toggle",
-      "id" : "crimdawn_bph",
-      "title" : "heist_bph",
-      "description" : "crimdawn_settings_heist_desc",
-      "callback" : "CrimDawn_UpdateActiveContent",
-      "value" : "bph",
-      "default_value" : true
-    },
-    {
-      "type" : "toggle",
       "id" : "crimdawn_welcome_to_the_jungle",
       "title" : "heist_welcome_to_the_jungle",
       "description" : "crimdawn_settings_heist_desc",
@@ -580,15 +544,6 @@
     },
     {
       "type" : "toggle",
-      "id" : "crimdawn_tag",
-      "title" : "heist_tag",
-      "description" : "crimdawn_settings_heist_desc",
-      "callback" : "CrimDawn_UpdateActiveContent",
-      "value" : "tag",
-      "default_value" : true
-    },
-    {
-      "type" : "toggle",
       "id" : "crimdawn_nail",
       "title" : "heist_nail",
       "description" : "crimdawn_settings_heist_desc",
@@ -598,11 +553,47 @@
     },
     {
       "type" : "toggle",
-      "id" : "crimdawn_mad",
-      "title" : "heist_mad",
-      "description" : "crimdawn_settings_dlc_desc",
+      "id" : "crimdawn_dah",
+      "title" : "heist_dah",
+      "description" : "crimdawn_settings_heist_desc",
       "callback" : "CrimDawn_UpdateActiveContent",
-      "value" : "mad",
+      "value" : "dah",
+      "default_value" : true
+    },
+    {
+      "type" : "toggle",
+      "id" : "crimdawn_tag",
+      "title" : "heist_tag",
+      "description" : "crimdawn_settings_heist_desc",
+      "callback" : "CrimDawn_UpdateActiveContent",
+      "value" : "tag",
+      "default_value" : true
+    },
+    {
+      "type" : "toggle",
+      "id" : "crimdawn_des",
+      "title" : "heist_des",
+      "description" : "crimdawn_settings_heist_desc",
+      "callback" : "CrimDawn_UpdateActiveContent",
+      "value" : "des",
+      "default_value" : true
+    },
+    {
+      "type" : "toggle",
+      "id" : "crimdawn_bph",
+      "title" : "heist_bph",
+      "description" : "crimdawn_settings_heist_desc",
+      "callback" : "CrimDawn_UpdateActiveContent",
+      "value" : "bph",
+      "default_value" : true
+    },
+    {
+      "type" : "toggle",
+      "id" : "crimdawn_nmh",
+      "title" : "heist_nmh",
+      "description" : "crimdawn_settings_heist_desc",
+      "callback" : "CrimDawn_UpdateActiveContent",
+      "value" : "nmh",
       "default_value" : true
     },
     {
@@ -648,6 +639,15 @@
       "description" : "crimdawn_settings_dlc_desc",
       "callback" : "CrimDawn_UpdateActiveContent",
       "value" : "kenaz",
+      "default_value" : true
+    },
+    {
+      "type" : "toggle",
+      "id" : "crimdawn_mad",
+      "title" : "heist_mad",
+      "description" : "crimdawn_settings_dlc_desc",
+      "callback" : "CrimDawn_UpdateActiveContent",
+      "value" : "mad",
       "default_value" : true
     },
     {
