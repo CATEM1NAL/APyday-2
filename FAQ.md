@@ -38,6 +38,7 @@ can see a list of your upgrades at any time!
 ## I keep getting [heist] and it sucks.
 Go to Options > Mod Options > Criminal Dawn and you can disable literally any heist in the game.
 You can do this at any time, but if the game has already picked a heist you need to play it first.
+
 I'd recommend only disabling the heists you *really* don't like, as disabling too many may
 negatively impact the experience.
 
