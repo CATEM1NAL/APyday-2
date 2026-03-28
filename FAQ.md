@@ -31,7 +31,7 @@ After installing the mod for the first time you get given coins for achievement 
 You can either roll with it and take the one time bonus for your first multiworld, or reset the
 save file to fix it ('Options' > 'Advanced' > 'Reset Account Progression').
 
-## Can I jump between different Criminal Dawn multiworlds?
+## Can I use multiple save files to play multiple multiworlds at once?
 No. I have a concept for an automated save switching system that will allow you
 to jump between multiworlds without having to reset your multiworld data, but due to how PAYDAY 2
 works it will take a bit of time to figure out and implement. Due to this it's a low priority feature,
