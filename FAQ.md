@@ -18,11 +18,11 @@ custom keybinds - if it does and QuickMenu works, then the mod should be fully p
 ## Is this multiplayer?
 Yes! Each player using their own YAML gives more freedom for people to choose their own item limits,
 but works best if everyone is using the same gameplay settings (run length/timer settings). This
-requires a bit more coordination pre-multiworld.
+requires some coordination.
 
 Alternatively, same-slot coop works very well for syncs! Use a single YAML and have everyone connect
-to the same slot, and everyone will receive random items together. The safehouse checks are a bit
-weird with this setup, but I can look into syncing that.
+to the same slot, and everyone will receive random items together. This simplifies the setup process
+but currently is a bit weird with safe house checks.
 
 ## How do I join an in-game lobby?
 1. Connect to the multiworld using the Criminal Dawn client in the Archipelago launcher.
