@@ -16,13 +16,16 @@ The VR exclusive skill/perk bonuses are not part of this mod and I don't know if
 custom keybinds - if it does and QuickMenu works, then the mod should be fully playable.
 
 ## Is this multiplayer?
-Yes! Each player using their own YAML gives more freedom for people to choose their own item limits,
-but works best if everyone is using the same gameplay settings (run length/timer settings). This
-requires some coordination.
+Yes! Same slot coop is the preferred way to play syncs, with everyone that wants to play together
+connecting to the same player slot. This means only one YAML is needed and everyone gets the same
+items at the same time, creating a more cohesive experience (this doesn't mean you all get the
+same items/upgrades, though!).
 
-Alternatively, same-slot coop works very well for syncs! Use a single YAML and have everyone connect
-to the same slot, and everyone will receive random items together. This simplifies the setup process
-but currently is a bit weird with safe house checks.
+Each player using their own YAML gives more freedom for people to choose their own item limits,
+but works best if everyone is using the same gameplay settings (run length/timer settings). This
+requires some coordination to set up and can lead to some weirdness such as one player hitting
+the score cap while the others have a higher score cap, but also allows for some more complex
+decision making (such as changing host based on who has the most time upgrades).
 
 ## How do I join an in-game lobby?
 1. Connect to the multiworld using the Criminal Dawn client in the Archipelago launcher.
