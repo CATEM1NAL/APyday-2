@@ -51,7 +51,7 @@ You can do this at any time, but if the game has already picked a heist you need
 I'd recommend only disabling the heists you *really* don't like, as disabling too many may
 negatively impact the experience.
 
-## How many upgrades are there?
+## How many upgrades do I get in a run?
 7 Perma-Skills, 7 Perma-Perks, 13 Skills, 13 Perks, and between 13 and 52 Stat Boosts.
 
 There are also 2 Drill Sawgeant upgrades and 2 Nine Lives upgrades.
