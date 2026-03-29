@@ -10,6 +10,11 @@ This mod does have built in support for BigLobby, but in my testing it seemed a 
 I left it in as an option in the YAML since it *is* pretty neat, even if a little broken. I don't
 recommend it as a serious option though.
 
+Due to this mod adding a persistent point of no return timer, some HUDs might be a bit fucky.
+From my testing there won't be any major issues, but most HUDs *won't* tell you if an assault is
+currently in progress, and some HUDs may potentially hide the hostage counter too. Out of all the
+custom HUDs I tried only MUI and VanillaHUD+ worked exactly as intended.
+
 ## Does this work in VR?
 No idea! Feel free to give it a shot and tell me how it goes, but realistically it *should* work?
 The VR exclusive skill/perk bonuses are not part of this mod and I don't know if VR supports BLT's
