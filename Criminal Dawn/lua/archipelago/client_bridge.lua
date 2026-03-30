@@ -159,8 +159,9 @@ function CrimDawnClient:PollData()
   -- Unlock saws
   if Global.CrimDawn.data.x.saws == 0 and self.data["OVE9000 Saw"] then
     CrimDawn.Log(FileIdent, "Unlocking first saw")
-    local saws = { "saw", "saw_secondary" }
-    Global.CrimDawn.data.unlocks[saws[math.random(2)]] = true
+    local saw = ({ "saw", "saw_secondary" })[math.random(2)]
+    Global.CrimDawn.data.unlocks[saw] = true
+    managers.upgrades:aquire(saw)
     Global.CrimDawn.data.x.saws = 1
     CrimDawn.ChatNotify("Unlocked an OVE9000 saw!")
     DataChanged = true
@@ -169,7 +170,9 @@ function CrimDawnClient:PollData()
   if Global.CrimDawn.data.x.saws == 1 and self.data["OVE9000 Saw"] == 2 then
     CrimDawn.Log(FileIdent, "Unlocking second saw")
     Global.CrimDawn.data.unlocks.saw = true
+    if not Global.upgrades_manager.aquired.saw then managers.upgrades:aquire("saw") end
     Global.CrimDawn.data.unlocks.saw_secondary = true
+    if not Global.upgrades_manager.aquired.saw_secondary then managers.upgrades:aquire("saw_secondary") end
     Global.CrimDawn.data.x.saws = 2
     CrimDawn.ChatNotify("Unlocked second OVE9000 saw!")
     DataChanged = true
@@ -347,10 +350,8 @@ function CrimDawnClient:PollData()
         if not Global.upgrades_manager.aquired[upgrade] then managers.upgrades:aquire(upgrade) end
 
       else -- On a table/index pair, look it up and add all upgrades it encompasses
-        for key, currentUpgrade in pairs(Global.CrimDawn.tables.upgrades[tableName][upgradeName]) do
-          if key == type("number") and not Global.upgrades_manager.aquired[currentUpgrade]
-            then managers.upgrades:aquire(currentUpgrade)
-          end
+        for _, currentUpgrade in ipairs(Global.CrimDawn.tables.upgrades[tableName][upgradeName]) do
+          if not Global.upgrades_manager.aquired[currentUpgrade] then managers.upgrades:aquire(currentUpgrade) end
         end
       end
     end

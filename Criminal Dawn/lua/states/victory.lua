@@ -37,7 +37,7 @@ Hooks:PostHook(VictoryState, "at_enter", "CrimDawn_HeistWon", function(self)
 
     if not CrimDawn.ScoreCap(VictoryScore) then
       CrimDawn.ChatNotify(" " .. Global.CrimDawn.data.game.score
-        .. " (+" .. VictoryScore * 2 .. " from heist completion).\n"
+        .. "\n+" .. VictoryScore * 2 .. " from heist completion.\n"
         .. CrimDawn.ScoreNeeded() .. " more for next check.") end
 
     CrimDawn:NextHeist(#Global.CrimDawn.data.game.heists)
@@ -60,7 +60,7 @@ Hooks:PostHook(VictoryState, "at_enter", "CrimDawn_HeistWon", function(self)
 
     if not CrimDawn.ScoreCap(VictoryScore) then
       CrimDawn.ChatNotify(" " .. Global.CrimDawn.data.game.score
-        .. " (+" .. VictoryScore .. " from day completion).\n"
+        .. "\n+" .. VictoryScore .. " from day completion.\n"
         .. CrimDawn.ScoreNeeded() .. " more for next check.")
     end CrimDawn:WriteSave(FileIdent, "day completed")
   end

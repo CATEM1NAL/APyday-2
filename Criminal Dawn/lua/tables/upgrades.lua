@@ -602,11 +602,14 @@ Global.CrimDawn.tables.upgrades = {
       dlc_owned = true, 
       upg_type = "stat", item_req = "body_armor1",
       disable = "crook_lbv_armour_1,crook_lbv_armour_3",
+      "player_level_2_armor_multiplier_1",
       "player_level_2_armor_multiplier_2"
     },
     crook_lbv_armour_3 = {
       dlc_owned = true, upg_type = "stat", item_req = "body_armor1",
       disable = "crook_lbv_armour_1,crook_lbv_armour_2",
+      "player_level_2_armor_multiplier_1",
+      "player_level_2_armor_multiplier_2",
       "player_level_2_armor_multiplier_3"
     },
     crook_vest_dodge_1 = {
@@ -636,11 +639,14 @@ Global.CrimDawn.tables.upgrades = {
     crook_vest_armour_2 = {
       dlc_owned = true, upg_type = "stat", item_req = "body_armor2",
       disable = "crook_vest_armour_1,crook_vest_armour_3",
+      "player_level_3_armor_multiplier_1",
       "player_level_3_armor_multiplier_2"
     },
     crook_vest_armour_3 = {
       dlc_owned = true, upg_type = "stat", item_req = "body_armor2",
       disable = "crook_vest_armour_1,crook_vest_armour_2",
+      "player_level_3_armor_multiplier_1",
+      "player_level_3_armor_multiplier_2",
       "player_level_3_armor_multiplier_3"
     },
     crook_hbv_dodge_1 = {
@@ -669,11 +675,14 @@ Global.CrimDawn.tables.upgrades = {
     crook_hbv_armour_2 = {
       dlc_owned = true, upg_type = "stat", item_req = "body_armor3",
       disable = "crook_hbv_armour_1,crook_hbv_armour_3",
+      "player_level_4_armor_multiplier_1",
       "player_level_4_armor_multiplier_2"
     },
     crook_hbv_armour_3 = {
       dlc_owned = true, upg_type = "stat", item_req = "body_armor3",
       disable = "crook_hbv_armour_1,crook_hbv_armour_2",
+      "player_level_4_armor_multiplier_1",
+      "player_level_4_armor_multiplier_2",
       "player_level_4_armor_multiplier_3"
     },
     crook_recovery = {
@@ -1861,7 +1870,6 @@ Global.CrimDawn.tables.upgrades = {
       dlc_owned = true, item_req = "trip_mine",
       "trip_mine_sensor_toggle",
       "trip_mine_sensor_highlight",
-      "trip_mine_can_switch_on_off"
     },
     ecm_capacity_1 = {
       dlc_owned = true, item_req = "ecm_jammer",

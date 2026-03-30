@@ -15,14 +15,15 @@ Hooks:PreHook(PlayerManager, "aquire_default_upgrades", "CrimDawn_UpgradeHandler
   tweak_data.skilltree.default_upgrades = {
     "player_hostage_trade", "player_special_enemy_highlight", "player_sec_camera_highlight", "cable_tie",
     "temporary_first_aid_damage_reduction", "temporary_passive_revive_damage_reduction_2",
-    "passive_player_xp_multiplier", "player_flashbang_multiplier_2"
+    "passive_player_xp_multiplier", "player_flashbang_multiplier_2", "trip_mine_can_switch_on_off"
   }
 
   -- Nuke current upgrades
   for key, _ in pairs(Global.upgrades_manager.aquired) do
     if key ~= "amcar" and key ~= "glock_17" and key ~= "weapon" and key ~= "second_deployable_1" then
       if not Global.CrimDawn.data.unlocks[key] then managers.upgrades:unaquire(key) end
-    end
+    elseif key == "second_deployable_1" then Global.upgrades_manager.aquired.second_deployable_1 = nil end
+    -- Removing Jack of all Trades normally causes it to reset the second deployable
   end
 
   Global.player_manager.upgrades = {}
@@ -45,6 +46,8 @@ Hooks:PreHook(PlayerManager, "aquire_default_upgrades", "CrimDawn_UpgradeHandler
       managers.upgrades:aquire(currentUpgrade)
     end
   end
+
+  Utils.PrintTable(Global.upgrades_manager.aquired)
 
   -- Pull unlocks from save file
   for key, _ in pairs(Global.CrimDawn.data.unlocks) do

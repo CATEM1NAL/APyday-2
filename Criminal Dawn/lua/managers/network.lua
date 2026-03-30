@@ -61,12 +61,12 @@ NetworkHelper:AddReceiveHook("CrimDawn_SendPoints", "CrimDawn_ReceivePoints", fu
   -- Give points
   if xPerPoint == "-1" and not CrimDawn.ScoreCap(tonumber(points)) then
     CrimDawn.ChatNotify(" " .. Global.CrimDawn.data.game.score
-      .. " (+" .. tonumber(points) .. " from " .. reason .. ").\n"
+      .. "\n+" .. tonumber(points) .. " from " .. reason .. ".\n"
       .. CrimDawn.ScoreNeeded() .. " more for next check.")
 
   elseif not CrimDawn.ScoreCap(tonumber(points)) then
     CrimDawn.ChatNotify(" " .. Global.CrimDawn.data.game.score
-      .. " (+1 per " .. xPerPoint .. " " .. reason .. ").\n"
+      .. "\n+1 per " .. xPerPoint .. " " .. reason .. ".\n"
       .. CrimDawn.ScoreNeeded() .. " more for next check.")
   end
 

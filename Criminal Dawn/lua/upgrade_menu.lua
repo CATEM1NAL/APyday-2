@@ -19,7 +19,7 @@ local function PermaUpgrade(upg_name, count)
     end
 
   else -- Directly add upgrade
-    if not PermaHeader then
+    if not PermaHeader and Global.CrimDawn.data.x.skills > 0 then
       table.insert(upgrades.skills, string.upper("Perma-skills:"))
       PermaHeader = true
     end
@@ -31,12 +31,9 @@ local function PermaUpgrade(upg_name, count)
 end
 
 if Global.CrimDawn.data.x.permaskills > 0 then PermaUpgrade("permaskills") end
-if Global.CrimDawn.data.x.lives > 0 then PermaUpgrade("player_drill_speed_multiplier", Global.CrimDawn.data.x.lives) end
-if Global.CrimDawn.data.x.drill > 0 then PermaUpgrade("player_additional_lives_", Global.CrimDawn.data.x.drill) end
-
-if Global.CrimDawn.data.x.permaskills > 0 and Global.CrimDawn.data.x.skills > 0 then
-  table.insert(upgrades.skills, string.upper("\nRandom Skills:"))
-end
+if Global.CrimDawn.data.x.lives > 0 then PermaUpgrade("player_additional_lives_", Global.CrimDawn.data.x.lives) end
+if Global.CrimDawn.data.x.drill > 0 then PermaUpgrade("player_drill_speed_multiplier", Global.CrimDawn.data.x.drill) end
+if PermaHeader then table.insert(upgrades.skills, string.upper("\nRandom Skills:")) end
 
 if Global.CrimDawn.data.x.permaperks > 0 then
   if Global.CrimDawn.data.x.perks > 0 then
