@@ -37,12 +37,6 @@ decision making (such as changing host based on who has the most time upgrades).
 2. Launch PAYDAY 2 (if you haven't already) and click "Initialise Multiworld".
 3. You can now connect to any other lobby in the same multiworld!
 
-## I'm trying to connect to a multiworld, but it disconnects instantly.
-Check the client! If it's failing and popping an error box, something is going horribly wrong -
-otherwise there should be a message that explains the issue. Most likely you haven't wiped your
-old multiworld data from the game yet; the client provides a step-by-step guide to doing this
-correctly.
-
 ## Why do I have hundreds of coins?
 After installing the mod for the first time you get given coins for achievement milestones.
 You can either roll with it and take the one time bonus for your first multiworld, or reset the
@@ -52,14 +46,7 @@ save file to fix it (Options > Advanced > Reset Account Progression).
 Go to Options > Mod Keybinds > Criminal Dawn Upgrades. Set the key to whatever you want, and now you
 can see a list of your upgrades at any time!
 
-## I keep getting [heist] and it sucks.
-Go to Options > Mod Options > Criminal Dawn and you can disable any heist in the game.
-You can do this at any time, but if the game has already picked a heist you need to play it first.
-
-I'd recommend only disabling the heists you *really* don't like, as disabling too many may
-negatively impact the experience.
-
-## How many upgrades do I get in a run?
+## How many upgrades do I get in a playthrough?
 7 Perma-Skills, 7 Perma-Perks, 13 Skills, 13 Perks, and between 13 and 52 Stat Boosts.
 
 There are also 2 Drill Sawgeant upgrades and 2 Nine Lives upgrades.
@@ -78,6 +65,19 @@ Yep! Everything currently in the mod is something that already exists within the
 looked into making custom upgrades yet, but it is something I want to do eventually. There are a
 decent number of unused upgrades in the game's code that I've enabled though, so you'll probably
 see some stuff you've never seen before.
+
+## I keep getting [heist] and it sucks.
+Go to Options > Mod Options > Criminal Dawn and you can disable any heist in the game.
+You can do this at any time, but if the game has already picked a heist you need to play it first.
+
+I'd recommend only disabling the heists you *really* don't like, as disabling too many may
+negatively impact the experience.
+
+## I'm trying to connect to a multiworld, but it disconnects instantly.
+Check the client! If it's failing and popping an error box, something is going horribly wrong -
+otherwise there should be a message that explains the issue. Most likely you haven't wiped your
+old multiworld data from the game yet; the client provides a step-by-step guide to doing this
+correctly.
 
 ## Can I use multiple save files to play multiple multiworlds at once?
 No. I have a concept for an automated save switching system that will allow you
