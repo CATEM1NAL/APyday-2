@@ -34,7 +34,7 @@ decision making (such as changing host based on who has the most time upgrades).
 
 ## How do I join an in-game lobby?
 1. Connect to the multiworld using the Criminal Dawn client in the Archipelago launcher.
-2. Launch PAYDAY 2 (if you haven't already) and click "Create Lobby".
+2. Launch PAYDAY 2 (if you haven't already) and click "Initialise Multiworld".
 3. You can now connect to any other lobby in the same multiworld!
 
 ## I'm trying to connect to a multiworld, but it disconnects instantly.
