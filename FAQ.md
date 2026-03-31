@@ -32,6 +32,12 @@ requires some coordination to set up and can lead to some weirdness such as one 
 the score cap while the others have a higher score cap, but also allows for some more complex
 decision making (such as changing host based on who has the most time upgrades).
 
+Due to how flexible the multiplayer system is, you can do some pretty cool stuff. For example if
+someone gets BKd and they own PAYDAY 2 they can  set up the mod, connect to a Criminal Dawn
+slot, and hop into the lobby until they get unstuck! You could also do a sync where everyone has
+their own games, but periodically you all join a PAYDAY slot to get a few checks. You can be as
+creative with this game's inclusion in a multiworld as you want to be.
+
 ## Why do I have hundreds of coins?
 After installing the mod for the first time you get given coins for achievement milestones.
 You can either roll with it and take the one time bonus for your first multiworld, or reset the
