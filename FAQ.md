@@ -61,7 +61,7 @@ completed, etc). These are always progression items.
 3. You can now connect to any other lobby in the same multiworld!
 
 ## How do I see my current skills/perks/stat boosts?
-Go to Options > Mod Keybinds > Criminal Dawn Upgrades. Set the key to whatever you want, and now you
+Go to `Options > Mod Keybinds > Criminal Dawn Upgrades`. Set the key to whatever you want, and now you
 can see a list of your upgrades at any time!
 
 ## How many upgrades do I get in a playthrough?
@@ -85,7 +85,7 @@ decent number of unused upgrades in the game's code that I've enabled though, so
 see some stuff you've never seen before.
 
 ## I keep getting [heist] and it sucks.
-Go to Options > Mod Options > Criminal Dawn and you can disable any heist in the game.
+Go to `Options > Mod Options > Criminal Dawn` and you can disable any heist in the game.
 You can do this at any time, but if the game has already picked a heist you need to play it first.
 
 I'd recommend only disabling the heists you *really* don't like, as disabling too many may
