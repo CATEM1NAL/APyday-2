@@ -32,15 +32,25 @@ requires some coordination to set up and can lead to some weirdness such as one 
 the score cap while the others have a higher score cap, but also allows for some more complex
 decision making (such as changing host based on who has the most time upgrades).
 
-## How do I join an in-game lobby?
-1. Connect to the multiworld using the Criminal Dawn client in the Archipelago launcher.
-2. Launch PAYDAY 2 (if you haven't already) and click "Initialise Multiworld".
-3. You can now connect to any other lobby in the same multiworld!
-
 ## Why do I have hundreds of coins?
 After installing the mod for the first time you get given coins for achievement milestones.
 You can either roll with it and take the one time bonus for your first multiworld, or reset the
 save file to fix it (Options > Advanced > Reset Account Progression).
+
+## How do I send checks?
+Just play the game! Basically anything you do will give you points that contribute to getting checks,
+with the number of points scaling as your run progresses and you receive more items.
+
+There are also checks locked behind the safehouse, with **115** on 6 heist mode or **69** (nice) on
+4 heist mode. The coins needed to unlock these are multiworld items.
+
+Finally, you also send checks when you reach a new heist milestone (heist 1 completed, heist 2
+completed, etc). These are always progression items.
+
+## How do I join an in-game lobby?
+1. Connect to the multiworld using the Criminal Dawn client in the Archipelago launcher.
+2. Launch PAYDAY 2 (if you haven't already) and click "Initialise Multiworld".
+3. You can now connect to any other lobby in the same multiworld!
 
 ## How do I see my current skills/perks/stat boosts?
 Go to Options > Mod Keybinds > Criminal Dawn Upgrades. Set the key to whatever you want, and now you
