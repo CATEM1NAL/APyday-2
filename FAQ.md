@@ -49,8 +49,8 @@ with the number of points scaling as your run progresses and you receive more it
 
 There are also checks locked behind the safehouse, with **138** on 6 heist mode or **92** on
 4 heist mode. The coins needed to unlock these are multiworld items. To move on to the next tier you
-need to fully upgrade the previous tier and finish the next heist (heist 1 completed for tier 2, heist 2
-completed for tier 3, etc).
+need to fully upgrade the previous tier and finish the next heist (heist 1 completed for tier 2,
+heist 2 completed for tier 3, etc).
 
 Finally, you also send checks when you reach a new heist milestone (heist 1 completed, heist 2
 completed, etc). These are always progression items.
