@@ -10,9 +10,10 @@ Makes a lot of sense that I'd do this, right?
 
 As for why the mod is a roguelite - PAYDAY 2 is a game without a structure so I figured trying to make a standard
 implementation would be a bit hellish (especially when trying to factor in DLCs). Additionally I just don't have much fun with the
-game having played it to death and having squeezed the game dry. Randomised builds and loadouts that you are forced
-to use creates an interesting player experience where I'm actually excited to see if the fucked up skill/perk combo I
-got is actually viable. Turning the game into a roguelite also provides a solution to the number one problem: what's the goal?
+game having played it to death and having squeezed the game dry. Randomised builds that you are forced to use and randomised
+loadouts that you have to try and make work creates an interesting player experience where I'm actually excited to see if the
+fucked up skill/perk combo I got is actually viable. Turning the game into a roguelite also provides a solution to the number one problem:
+what's the goal?
 
 ## So what *is* the goal?
 Beat 6 (or 4) heists in a row without failing. The heists are grouped into tiers that loosely follow heist complexity/story progress,
