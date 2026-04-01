@@ -38,6 +38,10 @@ and hop into the lobby until they get unstuck! You could also do a sync where ev
 own games, but periodically you all join a Criminal Dawn slot to get a few checks. You can be as
 creative with this game's inclusion in a multiworld as you want to be.
 
+## The mod isn't working?
+There's a few dependencies which BLT will prompt you to install after launching the game with
+Criminal Dawn. Download them, restart the game, and you should be good to go.
+
 ## Why do I have hundreds of coins?
 After installing the mod for the first time you get given coins for achievement milestones.
 You can either roll with it and take the one time bonus for your first multiworld, or reset the
