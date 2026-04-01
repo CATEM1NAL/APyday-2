@@ -106,10 +106,10 @@ DB:create_entry(Idstring("texture"), Idstring("crimdawn/safehouse5"), CrimDawn.M
 DB:create_entry(Idstring("texture"), Idstring("crimdawn/safehouse6"), CrimDawn.ModPath .. "assets/safehouse6.texture")
 
 local function SetPeerColours()
-  local player1 = Global.CrimDawn.archicolours[green]
-  local player2 = Global.CrimDawn.archicolours[blue]
-  local player3 = Global.CrimDawn.archicolours[pink]
-  local player4 = Global.CrimDawn.archicolours[yellow]
+  local player1 = Global.CrimDawn.archicolours.green
+  local player2 = Global.CrimDawn.archicolours.blue
+  local player3 = Global.CrimDawn.archicolours.pink
+  local player4 = Global.CrimDawn.archicolours.yellow
   local team_ai = Color(1, 1, 1, 1)
 
   tweak_data.peer_vector_colors[1] = player1
@@ -131,7 +131,7 @@ local function SetPeerColours()
   tweak_data.peer_vector_colors[5] = team_ai
   tweak_data.chat_colors[5] = team_ai
 
-  tweak_data.system_chat_color = Global.CrimDawn.archicolours[orange]
+  tweak_data.system_chat_color = Global.CrimDawn.archicolours.orange
 end
 
 if Global.CrimDawn then SetPeerColours() end
