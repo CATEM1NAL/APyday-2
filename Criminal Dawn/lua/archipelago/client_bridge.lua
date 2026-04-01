@@ -136,11 +136,11 @@ function CrimDawnClient:PollData()
   end
 
   if managers.custom_safehouse then -- Safehouse coins
-    if self.data["2 Coins"] > Global.CrimDawn.data.x.coins then
-      CrimDawn.Log(FileIdent, "Giving " .. 2 * (self.data["24 Coins"] - Global.CrimDawn.data.x.coins) .. " progression coins")
-      managers.custom_safehouse:add_coins(2 * (self.data["24 Coins"] - Global.CrimDawn.data.x.coins))
-      CrimDawn.ChatNotify("Received " .. 2 * (self.data["24 Coins"] - Global.CrimDawn.data.x.coins) .. " coins!")
-      Global.CrimDawn.data.x.coins = self.data["24 Coins"]
+    if self.data["Coins"] > Global.CrimDawn.data.x.coins then
+      CrimDawn.Log(FileIdent, "Giving " .. 2 * (self.data["Coins"] - Global.CrimDawn.data.x.coins) .. " coins")
+      managers.custom_safehouse:add_coins(2 * (self.data["Coins"] - Global.CrimDawn.data.x.coins))
+      CrimDawn.ChatNotify("Received " .. 2 * (self.data["Coins"] - Global.CrimDawn.data.x.coins) .. " coins!")
+      Global.CrimDawn.data.x.coins = self.data["Coins"]
       DataChanged = true
     end
   end
