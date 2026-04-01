@@ -52,7 +52,7 @@ function CrimDawn:Init()
       ChatManager.GAME,
       "CRIMINAL DAWN",
       message,
-      Global.CrimDawn.archicolours[orange]
+      Global.CrimDawn.archicolours.orange
     )
   end
 
