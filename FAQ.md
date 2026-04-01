@@ -38,11 +38,12 @@ and hop into the lobby until they get unstuck! You could also do a sync where ev
 own games, but periodically you all join a Criminal Dawn slot to get a few checks. You can be as
 creative with this game's inclusion in a multiworld as you want to be.
 
-## The mod isn't working?
-Make sure you have [SuperBLT](https://superblt.znix.xyz/) installed. There are a few dependencies
-which BLT will prompt you to install after launching the game with Criminal Dawn. Download them,
-restart the game, and you should be good to go. You'll know if the mod is working because you should
-have a fresh save file and the main menu will be different.
+## How do I install this/the mod isn't working?
+Make sure you have [SuperBLT](https://superblt.znix.xyz/) installed, and then extract
+`BLT-Criminal_Dawn.zip` into `PAYDAY 2/mods`. There are a few dependencies which BLT will prompt you
+to install after launching the game with Criminal Dawn. Download them, restart the game, and you should
+be good to go. You'll know if the mod is working because you should have a fresh save file and the main
+menu will be different.
 
 ## Why do I have hundreds of coins?
 After installing the mod for the first time you get given coins for achievement milestones.
