@@ -270,6 +270,7 @@ Hooks:PostHook(MenuManager, "do_clear_progress", "CrimDawn_ResetSave", function(
   if CrimDawnClient.data then
     CrimDawn.Log(FileIdent, "Wiping client data")
     os.remove(CrimDawnClient.DataPath)
+    os.remove(CrimDawn.SavePath .. "crimdawn_rooms.txt")
   end
 
   setup:load_start_menu()

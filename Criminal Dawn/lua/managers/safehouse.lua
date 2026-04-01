@@ -27,22 +27,20 @@ local function IncreaseCap()
   for _, data in ipairs(tweak_data.safehouse.rooms) do
     local CurrentRoom = Global.custom_safehouse_manager.rooms[data.room_id]
     UnlockedRooms = UnlockedRooms + #CurrentRoom.unlocked_tiers
-    CrimDawn.Log(FileIdent, UnlockedRooms)
     if CurrentRoom.tier_max > SafehouseTier then SafehouseTier = CurrentRoom.tier_max end
   end
 
-  CrimDawn.Log(FileIdent, "if " .. UnlockedRooms .. " > 23 and " .. MaxTier .. " > " .. SafehouseTier)
   if UnlockedRooms > 23 and MaxTier > SafehouseTier then
     for _, data in ipairs(tweak_data.safehouse.rooms) do
       local CurrentRoom = Global.custom_safehouse_manager.rooms[data.room_id]
       CurrentRoom.tier_max = 1 + (1 * math.floor(UnlockedRooms / 23))
     end
   end
+
   UpdateDescriptions()
 end
 
 Hooks:PostHook(CustomSafehouseManager, "purchase_room_tier", "CrimDawn_SafehouseUpgrade", function(self, room_id, tier)
-  managers.custom_safehouse:add_coins(2)
   CrimDawn.Log(FileIdent, "Upgraded room: " .. room_id .. " to tier " .. tier)
   Global.CrimDawn.data.safehouse[room_id] = tier
   CrimDawn:WriteSave(FileIdent, "safehouse upgraded")
