@@ -91,24 +91,6 @@ end
 
 CrimDawn:Init()
 
--- Logo replacements
-DB:create_entry(Idstring("texture"), Idstring("guis/textures/menu_title_screen"), CrimDawn.ModPath .. "assets/logo/title.texture")
-DB:create_entry(Idstring("texture"), Idstring("guis/textures/game_small_logo"), CrimDawn.ModPath .. "assets/logo/small.texture")
-DB:create_entry(Idstring("texture"), Idstring("units/menu/menu_scene/menu_cylinder_logo"), CrimDawn.ModPath .. "assets/logo/menu.texture")
-
--- Safehouse textures
-DB:create_entry(Idstring("texture"), Idstring("crimdawn/safehouse0"), CrimDawn.ModPath .. "assets/safehouse/tier0.texture")
-DB:create_entry(Idstring("texture"), Idstring("crimdawn/safehouse1"), CrimDawn.ModPath .. "assets/safehouse/tier1.texture")
-DB:create_entry(Idstring("texture"), Idstring("crimdawn/safehouse2"), CrimDawn.ModPath .. "assets/safehouse/tier2.texture")
-DB:create_entry(Idstring("texture"), Idstring("crimdawn/safehouse3"), CrimDawn.ModPath .. "assets/safehouse/tier3.texture")
-DB:create_entry(Idstring("texture"), Idstring("crimdawn/safehouse4"), CrimDawn.ModPath .. "assets/safehouse/tier4.texture")
-DB:create_entry(Idstring("texture"), Idstring("crimdawn/safehouse5"), CrimDawn.ModPath .. "assets/safehouse/tier5.texture")
-DB:create_entry(Idstring("texture"), Idstring("crimdawn/safehouse6"), CrimDawn.ModPath .. "assets/safehouse/tier6.texture")
-
--- Background replacements
-DB:create_entry(Idstring("texture"), Idstring("guis/textures/loading/loading-bg"), CrimDawn.ModPath .. "assets/bg/loading.texture")
-DB:create_entry(Idstring("texture"), Idstring("guis/textures/pd2/menu_backdrop/bd_baselayer"), CrimDawn.ModPath .. "assets/bg/briefing.texture")
-
 local function SetColours()
   local player1 = Global.CrimDawn.archicolours.blue
   local player2 = Global.CrimDawn.archicolours.pink
@@ -174,5 +156,23 @@ function Global.CrimDawn:Init()
   dofile(CrimDawn.ModPath .. "lua/tables/etc.lua")
   dofile(CrimDawn.ModPath .. "lua/tables/dlc.lua")
 end
+
+-- Logo replacements
+DB:create_entry(Idstring("texture"), Idstring("guis/textures/menu_title_screen"), CrimDawn.ModPath .. "assets/logo/title.texture")
+DB:create_entry(Idstring("texture"), Idstring("guis/textures/game_small_logo"), CrimDawn.ModPath .. "assets/logo/small.texture")
+DB:create_entry(Idstring("texture"), Idstring("units/menu/menu_scene/menu_cylinder_logo"), CrimDawn.ModPath .. "assets/logo/menu.texture")
+
+-- Safehouse textures
+DB:create_entry(Idstring("texture"), Idstring("crimdawn/safehouse0"), CrimDawn.ModPath .. "assets/safehouse/tier0.texture")
+DB:create_entry(Idstring("texture"), Idstring("crimdawn/safehouse1"), CrimDawn.ModPath .. "assets/safehouse/tier1.texture")
+DB:create_entry(Idstring("texture"), Idstring("crimdawn/safehouse2"), CrimDawn.ModPath .. "assets/safehouse/tier2.texture")
+DB:create_entry(Idstring("texture"), Idstring("crimdawn/safehouse3"), CrimDawn.ModPath .. "assets/safehouse/tier3.texture")
+DB:create_entry(Idstring("texture"), Idstring("crimdawn/safehouse4"), CrimDawn.ModPath .. "assets/safehouse/tier4.texture")
+DB:create_entry(Idstring("texture"), Idstring("crimdawn/safehouse5"), CrimDawn.ModPath .. "assets/safehouse/tier5.texture")
+DB:create_entry(Idstring("texture"), Idstring("crimdawn/safehouse6"), CrimDawn.ModPath .. "assets/safehouse/tier6.texture")
+
+-- Background replacements
+DB:create_entry(Idstring("texture"), Idstring("guis/textures/loading/loading-bg"), CrimDawn.ModPath .. "assets/bg/loading.texture")
+DB:create_entry(Idstring("texture"), Idstring("guis/textures/pd2/menu_backdrop/bd_baselayer"), CrimDawn.ModPath .. "assets/bg/briefing.texture")
 
 Global.CrimDawn:Init()
