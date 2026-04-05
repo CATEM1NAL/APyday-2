@@ -46,7 +46,8 @@ function CrimDawn:NextHeist(HeistsWon)
     end
 
     -- 28 Stores replaces final heist with 27+ minutes
-    if not Global.CrimDawn.data.x.time_upgrades > TotalTimeItems and Global.CrimDawn.data.game.ponr >= 1620 then
+    local TotalTimeItems = ((Global.CrimDawn.data.game.run_length * 15) / (Global.CrimDawn.data.game.timer_strength / 60)) - 1
+    if not (Global.CrimDawn.data.x.time_upgrades > TotalTimeItems) and Global.CrimDawn.data.game.ponr >= 1620 then
       ValidHeists.tier6 = {"cd_28stores"}
     end
 

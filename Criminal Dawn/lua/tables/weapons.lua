@@ -31,7 +31,6 @@ Global.CrimDawn.tables.WeaponIDToName = {
   dada_com = "grenade_dada_com",
   fir_com = "grenade_fir_com",
   frag_com = "grenade_frag_com",
-  g26 = "",
   iceaxe = "topaz",
   xmas_snowball = "grenade_xmas_snowball",
 }
