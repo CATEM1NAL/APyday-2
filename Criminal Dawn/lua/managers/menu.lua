@@ -237,7 +237,6 @@ Hooks:PreHook(MenuCallbackHandler, "start_the_game", "CrimDawn_PreStartGame", fu
     if NetworkHelper:IsHost() then
       -- Pick starting heist if no active run
       if not next(Global.CrimDawn.data.game.heists) then CrimDawn:NextHeist(0) end
-      math.randomseed(os.time())
 
       -- If no mutators active, try to enable them
       dofile(CrimDawn.ModPath .. "lua/tables/mutators.lua")

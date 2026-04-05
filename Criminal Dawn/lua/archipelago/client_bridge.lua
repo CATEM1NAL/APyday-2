@@ -95,7 +95,7 @@ function CrimDawnClient:PollData()
     CrimDawn.Log(FileIdent, "Seed mismatch! Aborting!")
   return end
 
-  math.randomseed(os.time() .. os.clock())
+  math.randomseed(os.time() + (os.clock() * 1000))
 
   -- Add drill speed upgrades
   if self.data["Drill Sawgeant"] > Global.CrimDawn.data.x.drill then

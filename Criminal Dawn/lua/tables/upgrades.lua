@@ -798,27 +798,25 @@ Global.CrimDawn.tables.upgrades = {
     gambler_heal_1 = {
       dlc_owned = true, upg_type = "ability",
       disable = "gambler_heal_2,gambler_heal_3", 
-      "temporary_loose_ammo_restore_health_1"
+      "temporary_loose_ammo_restore_health_1",
+      "player_loose_ammo_restore_health_give_team"
     },
     gambler_heal_2 = {
       dlc_owned = true, upg_type = "ability",
       disable = "gambler_heal_1,gambler_heal_3", 
-      "temporary_loose_ammo_restore_health_2"
+      "temporary_loose_ammo_restore_health_2",
+      "player_loose_ammo_restore_health_give_team"
     },
     gambler_heal_3 = {
       dlc_owned = true, upg_type = "ability",
       disable = "gambler_heal_1,gambler_heal_2", 
-      "temporary_loose_ammo_restore_health_3"
+      "temporary_loose_ammo_restore_health_3",
+      "player_loose_ammo_restore_health_give_team"
     },
     gambler_mag_throw = {
       dlc_owned = true, upg_type = "ability",
       upg_req = "perks-gambler_heal_1,perks-gambler_heal_2,perks-gambler_heal_3",
       "temporary_loose_ammo_give_team"
-    },
-    gambler_heal_team = {
-      dlc_owned = true, upg_type = "stat",
-      upg_req = "perks-gambler_heal_1,perks-gambler_heal_2,perks-gambler_heal_3",
-      "player_loose_ammo_restore_health_give_team"
     },
 
     -- Grinder
