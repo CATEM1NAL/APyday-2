@@ -4,10 +4,9 @@ Hooks:OverrideFunction(BlackMarketManager, "has_unlocked_breech", function() ret
 Hooks:OverrideFunction(BlackMarketManager, "has_unlocked_ching", function() return true end)
 Hooks:OverrideFunction(BlackMarketManager, "has_unlocked_erma", function() return true end)
 Hooks:OverrideFunction(BlackMarketManager, "has_unlocked_shock", function() return true end)
-Hooks:OverrideFunction(BlackMarketManager, "has_unlocked_victor", function() return true end)
 
-Hooks:PostHook(BlackMarketManager, "get_item_amount", "CrimDawn_BlackMarketInfiniteItems", function(self, _, category)
-  if category == "masks" or category == "weapon_mods" then return 2 end
+Hooks:PostHook(BlackMarketManager, "get_item_amount", "CrimDawn_BMInfiniteItems", function(self, _, category)
+  if category ~= "weapon_skins" then return 1 end
 end)
 
 Hooks:OverrideFunction(BlackMarketManager, "_setup_unlocked_crew_items", function(self)
@@ -27,4 +26,10 @@ Hooks:OverrideFunction(BlackMarketManager, "_setup_unlocked_crew_items", functio
 	self:_unlock_crew_item("crew_quiet")
 	self:_unlock_crew_item("crew_generous")
 	self:_unlock_crew_item("crew_eager")
+end)
+
+Hooks:OverrideFunction(BlackMarketManager, "equipped_van_skin", function()
+  local skins = { "default", "brown", "green", "grey", "red", "white", "yellow", "icecream", "spooky" }
+  if managers.dlc:is_dlc_unlocked("overkill_pack") then table.insert(skins, "overkill") end
+  return skins[math.random(1, #skins)]
 end)

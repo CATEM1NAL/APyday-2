@@ -13,6 +13,5 @@ Hooks:PreHook(PlayerDamage, "damage_bullet", "CrimDawn_DamageBullet", function(s
     CrimDawn.ChatNotify("Death link received!")
 
     Global.CrimDawn.data.game.deathlink = CrimDawnClient.data.deathlink
-    CrimDawn:WriteSave(FileIdent, "deathlink")
   end
 end)

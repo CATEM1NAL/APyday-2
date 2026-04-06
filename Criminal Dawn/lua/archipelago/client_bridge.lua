@@ -347,6 +347,6 @@ function CrimDawnClient:PollData()
       end
     end
   CrimDawn:RandomUnlock()
-  CrimDawn:WriteSave(FileIdent, "multiworld client update")
+  CrimDawn:WriteSave(FileIdent, "received client update")
   end
 end

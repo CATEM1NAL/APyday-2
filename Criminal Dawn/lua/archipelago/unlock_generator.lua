@@ -115,9 +115,10 @@ function CrimDawn:RandomUpgrade(count, table_name)
     -- Set up for next pass
     if i < count then
       AcquiredUpgrades[WorkingTable[UpgradeIndex]] = true
+      local LastUpgrade = Global.CrimDawn.tables.upgrades[table_name][WorkingTable[UpgradeIndex]]
 
-      if Global.CrimDawn.tables.upgrades[table_name][WorkingTable[UpgradeIndex]].disable then
-        for item in Global.CrimDawn.tables.upgrades[table_name][WorkingTable[UpgradeIndex]].disable:gmatch("([^,]+)") do
+      if LastUpgrade.disable then
+        for item in LastUpgrade.disable:gmatch("([^,]+)") do
           DisabledUpgrades[item] = true
         end
       end
@@ -141,22 +142,24 @@ local TypeToPrefix = {
 
 local function UnlockMenu(unlock_type)
   local UnlockName = {}
+  local TypeName = {}
 
   for i = 1, 3 do
+    TypeName[i] = unlock_type
     if unlock_type == "armour" then
       UnlockName[i] = tonumber((CrimDawn.state.unlockopt[i] or "0"):sub(-1)) + 1
     else
       UnlockName[i] = Global.CrimDawn.tables.WeaponIDToName[CrimDawn.state.unlockopt[i]] or CrimDawn.state.unlockopt[i] or "nil"
-      if UnlockName[i] == "g26" then unlock_type = "g26" end
+      if UnlockName[i] == "g26" then TypeName[i] = "g26" end -- Chimano Compact has its own prefix. Thanks Overkill.
     end
   end
 
   local UnlockButtons = {
-    [1] = { text = managers.localization:text("bm_" .. TypeToPrefix[unlock_type] .. UnlockName[1]),
+    [1] = { text = managers.localization:text("bm_" .. TypeToPrefix[TypeName[1]] .. UnlockName[1]),
             callback = CrimDawn.UnlockButton1 },
-    [2] = { text = managers.localization:text("bm_" .. TypeToPrefix[unlock_type] .. UnlockName[2]),
+    [2] = { text = managers.localization:text("bm_" .. TypeToPrefix[TypeName[2]] .. UnlockName[2]),
             callback = CrimDawn.UnlockButton2 },
-    [3] = { text = managers.localization:text("bm_" .. TypeToPrefix[unlock_type] .. UnlockName[3]),
+    [3] = { text = managers.localization:text("bm_" .. TypeToPrefix[TypeName[3]] .. UnlockName[3]),
             callback = CrimDawn.UnlockButton3 }
   }
   if not CrimDawn.state.unlockopt[3] then table.remove(UnlockButtons, 3) end

@@ -164,6 +164,7 @@ function Global.CrimDawn:Init()
   CrimDawn.Log(FileIdent, "Attempting to load save file...")
   self.data = io.load_as_json(CrimDawn.SaveFile)
   if not self.data then CrimDawn:Reset() end
+  self.data.game.deathlink = os.time()
 
   self.next_point = 100 + (self.data.game.score - self.data.game.score % 100)
 
