@@ -11,6 +11,11 @@ to install after launching the game with Criminal Dawn. Download them, restart t
 be good to go. You'll know if the mod is working because you will have a fresh save file and the game
 will have an orange/pink colour palette (instead of blue).
 
+When it comes to connecting to the multiworld, always make sure you connect *before* launching the game.
+The client automatically handles switching between different save files (if they exist), but the mod only
+loads saves on launch. If it's your first time playing you can ignore this - but keep it in mind if you
+want to play more seeds.
+
 ## What mods is this compatible with?
 As long as it isn't a total overhaul or a mod that adds new content (new weapons, new heists, etc)
 it should work fine! Custom weapons will probably be available from the start, and custom heists just
