@@ -116,7 +116,7 @@ negatively impact the experience.
 ## I'm playing but nothing is happening.
 Did you connect to a different multiworld while in a lobby? In this case the game will allow you
 to keep playing, but you won't be able to make any progress or receive any items. Always restart
-the game after connecting to a multiworld!
+the game after connecting to a multiworld.
 
 ## I'm trying to connect to a multiworld, but it disconnects instantly.
 Check the client! If it's failing and popping an error box, something is going horribly wrong -
