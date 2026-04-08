@@ -4,6 +4,13 @@ This page contains simple answers to common issues or questions you might have.
 ## The world doesn't generate/I can't find the client.
 Make sure you have the [0.6.7 launcher](https://github.com/ArchipelagoMW/Archipelago/releases/latest)!
 
+## How do I install this/the mod isn't working?
+Make sure you have [SuperBLT](https://superblt.znix.xyz/) installed, and then extract
+`BLT-Criminal_Dawn.zip` into `PAYDAY 2/mods`. There are a few dependencies which BLT will prompt you
+to install after launching the game with Criminal Dawn. Download them, restart the game, and you should
+be good to go. You'll know if the mod is working because you will have a fresh save file and the game
+will have an orange/pink colour palette (instead of blue).
+
 ## What mods is this compatible with?
 As long as it isn't a total overhaul or a mod that adds new content (new weapons, new heists, etc)
 it should work fine! Custom weapons will probably be available from the start, and custom heists just
@@ -40,13 +47,6 @@ someone gets BKd and they own PAYDAY 2, they can set up the mod, connect to a Cr
 and hop into the lobby until they get unstuck! You could also do a sync where everyone has their
 own games, but periodically you all join a Criminal Dawn slot to get a few checks. You can be as
 creative with this game's inclusion in a multiworld as you want to be.
-
-## How do I install this/the mod isn't working?
-Make sure you have [SuperBLT](https://superblt.znix.xyz/) installed, and then extract
-`BLT-Criminal_Dawn.zip` into `PAYDAY 2/mods`. There are a few dependencies which BLT will prompt you
-to install after launching the game with Criminal Dawn. Download them, restart the game, and you should
-be good to go. You'll know if the mod is working because you will have a fresh save file and the game
-will have an orange/pink colour palette (instead of blue).
 
 ## Why do I have hundreds of coins?
 After installing the mod for the first time you get given coins for achievement milestones (may have been fixed?? let me know!).
@@ -115,12 +115,4 @@ negatively impact the experience.
 
 ## I'm trying to connect to a multiworld, but it disconnects instantly.
 Check the client! If it's failing and popping an error box, something is going horribly wrong -
-otherwise there should be a message that explains the issue. Most likely you haven't wiped your
-old multiworld data from the game yet; the client provides a step-by-step guide to doing this
-correctly.
-
-## Can I use multiple save files to play multiple multiworlds at once?
-No. I have a concept for an automated save switching system that will allow you
-to jump between multiworlds without having to reset your multiworld data, but it will take a bit
-of time to figure out and implement. Due to this it's a low priority feature,
-however I can bump it up the queue if enough people want this to happen!
+otherwise there should be a message that explains the issue.
