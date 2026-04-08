@@ -13,8 +13,9 @@ will have an orange/pink colour palette (instead of blue).
 
 When it comes to connecting to the multiworld, always make sure you connect *before* launching the game.
 The client automatically handles switching between different save files (if they exist), but the mod only
-loads saves on launch. If it's your first time playing you can ignore this - but keep it in mind if you
-want to play more seeds.
+loads saves on launch. If you connect while the game is open nothing bad will happen, but you will have to
+restart for the mod to work again. If it's your first time playing you can ignore this - but keep it in mind
+if you want to play more seeds.
 
 ## What mods is this compatible with?
 As long as it isn't a total overhaul or a mod that adds new content (new weapons, new heists, etc)
