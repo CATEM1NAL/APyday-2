@@ -63,7 +63,7 @@ function CrimDawn:RandomUpgrade(count, table_name)
     local BaseTable = {}
     local UpgType = GetUpgradeType(table_name, i)
     if UpgType then self.Log(FileIdent, "Next upgrade type: " .. UpgType)
-    else self.Log(FileIdent, "No upgrade type given") return end
+    else self.Log(FileIdent, "No upgrade type given") end
 
     for key, data in pairs(Global.CrimDawn.tables.upgrades[table_name]) do
 
