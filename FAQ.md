@@ -5,7 +5,7 @@ This page contains simple answers to common issues or questions you might have.
 Make sure you have the [0.6.7 launcher](https://github.com/ArchipelagoMW/Archipelago/releases/latest)!
 
 ## How do I install this/the mod isn't working?
-Make sure you have [SuperBLT](https://superblt.znix.xyz/) installed, and then extract
+Make sure you have [SuperBLT](https://superblt.znix.xyz/) installed, and then extracthasn't been played
 `BLT-Criminal_Dawn.zip` into `PAYDAY 2/mods`. There are a few dependencies which BLT will prompt you
 to install after launching the game with Criminal Dawn. Download them, restart the game, and you should
 be good to go. You'll know if the mod is working because you will have a fresh save file and the game
@@ -113,7 +113,7 @@ Go to `Options > Mod Options > Criminal Dawn` and you can disable any heist in t
 You can do this at any time, but if the game has already picked a heist you need to play it first.
 
 I'd recommend only disabling the heists you *really* don't like, as disabling too many may
-negatively impact the experience.
+negatively impact the experience. Disabling every heist will cause the game to crash on heist gen.
 
 ## I'm playing but nothing is happening.
 Did you connect to a different multiworld while in a lobby? In this case the game will allow you
