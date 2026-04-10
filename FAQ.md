@@ -101,9 +101,8 @@ decent number of unused upgrades in the game's code that I've enabled though, so
 see some stuff you've never seen before.
 
 ## The mod is too hard!
-Go to `Options > Mod Options > Criminal Dawn` and you can change the difficulty cap. By default it's
-set to Overkill, with the difficulty scaling as you progress through a run and get more items - the
-difficulty that it scales towards can be set here.
+Go to `Options > Mod Options > Criminal Dawn` and you can change the difficulty cap. The difficulty
+scales towards the cap as you progress through a run and receive items.
 
 ## I don't like the mutators.
 Go to `Options > Mod Options > Criminal Dawn` and you can change the mutator mode. There are
