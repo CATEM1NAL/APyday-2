@@ -34,4 +34,8 @@ Global.CrimDawn.tables.WeaponIDToName = {
   frag_com = "grenade_frag_com",
   iceaxe = "topaz",
   xmas_snowball = "grenade_xmas_snowball",
+  poison_gas_grenade = "grenade_poison_gas_grenade",
+  molotov = "grenade_molotov",
+  wpn_gre_electric = "grenade_electric",
+  frag = "grenade_frag"
 }
