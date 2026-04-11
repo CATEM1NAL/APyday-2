@@ -123,6 +123,15 @@
     },
     {
       "type" : "toggle",
+      "id" : "crimdawn_cd_goat1",
+      "title" : "heist_peta_hl",
+      "description" : "crimdawn_settings_dlc_desc",
+      "callback" : "CrimDawn_SaveToggleSettings",
+      "value" : "cd_goat1",
+      "default_value" : true
+    },
+    {
+      "type" : "toggle",
       "id" : "crimdawn_cd_biker1",
       "title" : "heist_watchdogs_1_hl",
       "description" : "crimdawn_settings_dlc_desc",

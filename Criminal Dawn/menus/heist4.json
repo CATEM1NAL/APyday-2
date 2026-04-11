@@ -114,11 +114,11 @@
     },
     {
       "type" : "toggle",
-      "id" : "crimdawn_peta",
-      "title" : "heist_peta",
+      "id" : "crimdawn_cd_goat2",
+      "title" : "heist_peta2_hl",
       "description" : "crimdawn_settings_dlc_desc",
       "callback" : "CrimDawn_SaveToggleSettings",
-      "value" : "peta",
+      "value" : "cd_goat2",
       "default_value" : true
     },
     {
