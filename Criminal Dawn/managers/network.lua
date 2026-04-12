@@ -28,7 +28,7 @@ end)
 
 -- PONR time remaining chat message (archipelago/client_bridge.lua)
 NetworkHelper:AddReceiveHook("CrimDawn_TimeUpdate", "CrimDawn_SyncTimeUpdate", function(data, sender)
-  if CrimDawn.state.maskup_time ~= 0 then CrimDawn.ChatNotify(data .. " minutes remaining.")
+  if CrimDawn.state.maskup_time then CrimDawn.ChatNotify(data .. " minutes remaining.")
   else CrimDawn.ChatNotify("Next heist will start with " .. data .. " more minutes.") end
 end)
 
@@ -42,7 +42,7 @@ NetworkHelper:AddReceiveHook("CrimDawn_StartPONR", "CrimDawn_SyncPONR", function
 end)
 
 -- Peer specific hooks
-if not NetworkHelper:IsHost() then -- Disable PONR (overrides/peer_sync.lua)
+if NetworkHelper:IsClient() then -- Disable PONR (overrides/peer_sync.lua)
   NetworkHelper:AddReceiveHook("CrimDawn_DisablePONR", "CrimDawn_PeerDisablePONR", function(data, sender)
     CrimDawn.Log(FileIdent, "Disabling PONR timer")
     CrimDawn.state.maskup_time = -1
