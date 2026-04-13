@@ -14,7 +14,7 @@ correctly, you need to restart the game before you can start playing.
 
 If you're comfortable modifying YAMLs directly and don't use the options creator, I'd recommend starting
 from one of the presets found in `Players/Templates/Presets`. If you use the options creator... uh...
-figure it out, I guess!
+good luck!
 
 When it comes to connecting to the multiworld, always make sure you connect *before* launching the game.
 The client automatically handles switching between different save files (if they exist), but the mod only
