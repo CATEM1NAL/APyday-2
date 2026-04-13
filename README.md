@@ -16,11 +16,11 @@ fucked up skill/perk combo I got is actually viable. Turning the game into a rog
 what's the goal?
 
 ## So what *is* the goal?
-Beat 6 (or 4) heists in a row without failing. The heists are grouped into tiers that loosely follow heist complexity/story progress,
+Beat X amount of heists in a row without failing. The heists are grouped into tiers that loosely follow heist complexity/story progress,
 so later heists tend to be heists that are grander in scale or concept than those that come before. Jewelry Store and Ukrainian Job are
-only valid in the 1st of 6 heist tiers for example (and you literally won't play them in 4 heist mode!).
+only valid in the 1st of 6 heist tiers for example.
 
-Beating 6 heists in a row sounds easy, right?
+Beating a few heists in a row sounds easy, right?
 
 ## How is this hard?
 At the beginning the game starts on normal difficulty with one random mutator active. Every heist the difficulty
