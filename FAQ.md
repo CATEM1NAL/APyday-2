@@ -23,20 +23,20 @@ loads saves on launch. If you connect while the game is open nothing bad will ha
 restart for the mod to work again.
 
 ### Recommended settings for each goal:
-**Original (4 Heists, ~8 hours):**
-Run Length / Safe House Tiers: 4
+**Original (4 Heists, ~8 hours):**  
+Run Length / Safe House Tiers: 4  
 Score Checks: 52
 
-**Original (6 Heists, ~12 hours):**
-Run Length / Safe House Tiers: 6
+**Original (6 Heists, ~12 hours):**  
+Run Length / Safe House Tiers: 6  
 Score Checks: 72
 
-**Score:**
-Safe House Tiers: 2
+**Score:**  
+Safe House Tiers: 2  
 Score Checks: 64
 
-**Campaign:**
-Safe House Tiers: 1
+**Campaign:**  
+Safe House Tiers: 1  
 Score Checks: 77
 
 ## What mods is this compatible with?
