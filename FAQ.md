@@ -48,8 +48,7 @@ same unlocks/upgrades, though!).
 
 Each player using their own YAML also works, but will be kinda weird unless everyone is using the
 same gameplay settings. This requires some coordination to set up and can lead to some weirdness
-such as one player hitting the score cap while the others have a higher score cap, but also allows
-for some more complex decision making (such as changing host based on who has the most time upgrades).
+such as one player hitting the score cap while the others have a higher score cap.
 
 Due to how flexible the multiplayer system is, you can do some pretty cool stuff. For example if
 someone gets BKd and they own PAYDAY 2, they can set up the mod, connect to a Criminal Dawn slot,
