@@ -46,17 +46,14 @@ connecting to the same player slot. This means only one YAML is needed and every
 items at the same time, creating a more cohesive experience (this doesn't mean you all get the
 same unlocks/upgrades, though!).
 
-Each player using their own YAML gives more freedom for people to choose their own item limits,
-but works best if everyone is using the same gameplay settings (run length/timer settings). This
-requires some coordination to set up and can lead to some weirdness such as one player hitting
-the score cap while the others have a higher score cap, but also allows for some more complex
-decision making (such as changing host based on who has the most time upgrades).
+Each player using their own YAML also works, but will be kinda weird unless everyone is using the
+same gameplay settings. This requires some coordination to set up and can lead to some weirdness
+such as one player hitting the score cap while the others have a higher score cap, but also allows
+for some more complex decision making (such as changing host based on who has the most time upgrades).
 
 Due to how flexible the multiplayer system is, you can do some pretty cool stuff. For example if
 someone gets BKd and they own PAYDAY 2, they can set up the mod, connect to a Criminal Dawn slot,
-and hop into the lobby until they get unstuck! You could also do a sync where everyone has their
-own games, but periodically you all join a Criminal Dawn slot to get a few checks. You can be as
-creative with this game's inclusion in a multiworld as you want to be.
+and help out until they get unstuck!
 
 ## How do I send checks?
 Just play the game! Basically anything you do will give you points that contribute to getting checks,
@@ -73,15 +70,17 @@ completed, etc). These are always progression items.
 
 ## How do I join an in-game lobby?
 1. Connect to the multiworld using the Criminal Dawn client in the Archipelago launcher.
-2. Launch PAYDAY 2 (if you haven't already) and click "Initialise Multiworld".
+2. Launch PAYDAY 2 (or restart it if it was already open) and click "Load Client Data".
 3. You can now connect to any other lobby in the same multiworld!
 
 ## How do I see my current skills/perks/stat boosts?
-Go to `Options > Mod Keybinds > Criminal Dawn Upgrades`. Set the key to whatever you want, and now you
-can see a list of your upgrades at any time!
+In the inventory clicking on skills or perks will open the upgrade menu.
+
+You can also see this menu in game by going to `Options > Mod Keybinds > Criminal Dawn Upgrades`.
+Set the key to whatever you want, and now you can see the full list at any time!
 
 ## How many upgrades do I get in a playthrough?
-7 Perma-Skills, 7 Perma-Perks, 13 Skills, 13 Perks, and at least 13 Stat Boosts.
+7 Perma-Skills, 7 Perma-Perks, 13 Skills, 13 Perks, and at least 7 Stat Boosts.
 
 There are also 2 Drill Sawgeant upgrades and 2 Nine Lives upgrades.
 
@@ -132,5 +131,5 @@ to keep playing, but you won't be able to make any progress or receive any items
 the game after connecting to a multiworld.
 
 ## I'm trying to connect to a multiworld, but it disconnects instantly.
-Check the client! If it's failing and popping an error box, something is going horribly wrong -
-otherwise there should be a message that explains the issue.
+Check the client! If something is going horribly wrong, it should tell you the reason. If nothing
+is happening then something is going *horribly* wrong.
