@@ -25,7 +25,7 @@ restart for the mod to work again.
 ### Recommended settings for each goal:
 **Original (4 Heists, ~8 hours):**  
 Run Length / Safe House Tiers: 4  
-Score Checks: 52
+Score Checks: 68
 
 **Original (6 Heists, ~12 hours):**  
 Run Length / Safe House Tiers: 6  
