@@ -26,7 +26,7 @@ As long as it isn't a total overhaul or a mod that adds new content (new weapons
 it should work fine! Custom weapons will probably be available from the start, and custom heists just
 won't appear at all.
 
-This mod does have built in support for BigLobby, but in my testing it seemed a little unstable.
+The world has built in support for BigLobby, but in my testing it seemed a little unstable.
 I left it in as an option in the YAML since it *is* pretty neat, even if a little broken. I don't
 recommend it as a serious option though.
 
