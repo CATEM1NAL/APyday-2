@@ -31,7 +31,7 @@ Score Checks: 68
 Run Length / Safe House Tiers: 6  
 Score Checks: 72
 
-**Score:**  
+**Score (80 checks):**  
 Safe House Tiers: 2  
 Score Checks: 64
 
