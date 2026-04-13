@@ -13,8 +13,8 @@ will have an orange/pink colour palette (instead of blue). After verifying that 
 correctly, you need to restart the game before you can start playing.
 
 If you're comfortable modifying YAMLs directly and don't use the options creator, I'd recommend starting
-from one of the presets found in `Players/Templates/Presets`. If you use the options creator... uh...
-good luck!
+from one of the presets found in `Players/Templates/Presets`. If you use the options creator, the default
+settings are the same as the 4 heist preset. If you want to try one of the other modes... good luck!
 
 When it comes to connecting to the multiworld, always make sure you connect *before* launching the game.
 The client automatically handles switching between different save files (if they exist), but the mod only
