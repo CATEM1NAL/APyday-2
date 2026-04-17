@@ -59,18 +59,13 @@ The VR exclusive skill/perk bonuses are not part of this mod, but if QuickMenu w
 then the mod should be fully playable.
 
 ## Is this multiplayer?
-Yes! Same slot coop is the preferred way to play syncs, with everyone that wants to play together
-connecting to the same player slot. This means only one YAML is needed and everyone gets the same
-items at the same time, creating a more cohesive experience (this doesn't mean you all get the
-same unlocks/upgrades, though!).
+Yes! As long as everyone that wants to play together connects to the same multiworld slot, you
+can play multiplayer just fine. Players on different slots can't crossplay due to potential issues
+with goal conflicts.
 
-Each player using their own YAML also works, but will be kinda weird unless everyone is using the
-same gameplay settings. This requires some coordination to set up and can lead to some weirdness
-such as one player hitting the score cap while the others have a higher score cap.
-
-Due to how flexible the multiplayer system is, you can do some pretty cool stuff. For example if
-someone gets BKd and they own PAYDAY 2, they can set up the mod, connect to a Criminal Dawn slot,
-and help out until they get unstuck!
+Because all it takes is connecting to the slot to play multiplayer, this means anyone else in the
+multiworld can join your game at any time if they wish! Get BKd and don't know what to do? Join the
+Payday lobby and help out!
 
 ## How do I send checks?
 Just play the game! Basically anything you do will give you points that contribute to getting checks,
