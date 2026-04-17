@@ -128,6 +128,7 @@ Coming in v0.6.0 (not currently live):
 - If you get the associated skill, all drills are guaranteed to be auto restarters (max 30% chance in vanilla).
 - **Drill Sawgeant** now also applies to computer hacks.
 - Stamina has been removed.
+- Remaining downs now persist between heists. You restore one between heists.
 - Doctor bags only restore two downs (restore all downs in vanilla).
 - Lighter armours recover faster, while heavier armours take longer to recover:
   - **Two-Piece Suit:** 1s regen (affected by suppression).
@@ -137,6 +138,7 @@ Coming in v0.6.0 (not currently live):
   - **Flak Jacket:** 4.5s regen (ignores suppression).
   - **Combined Tactical Vest:** 6s regen (ignores suppression).
   - **Improved Combined Tactical Vest:** 7.5s regen (ignores suppression).
+- **Tooth and Claw** isn't a fixed 1.5s armour regen on armour break - it's now half of your normal regen time, to a minimum of 1.5s.
 - Enemy health is locked at **Overkill** values on all difficulties, with a lower headshot/crit multiplier (same as vanilla Normal/Hard).
 
 ## I keep getting [heist] and it sucks.
