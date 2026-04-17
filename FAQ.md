@@ -128,7 +128,7 @@ Coming in v0.6.0 (not currently live):
 - If you get the associated skill, all drills are guaranteed to be auto restarters (max 30% chance in vanilla).
 - **Drill Sawgeant** now also applies to computer hacks.
 - Stamina has been removed.
-- Doctor bags only restore one down (restore all downs in vanilla) and hold 3 charges base (2 charges in vanilla).
+- Doctor bags only restore two downs (restore all downs in vanilla).
 - Lighter armours recover faster, while heavier armours take longer to recover:
   - **Two-Piece Suit:** 1s regen (affected by suppression).
   - **Lightweight Ballistic Vest:** 1.5s regen (affected by suppression).
