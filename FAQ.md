@@ -110,18 +110,6 @@ Perma-Skill allows you to bag bodies and the third Perma-Skill allows you to int
 ### Those are some weird numbers.
 I was leaning into PAYDAY 2's playing card motif, so the perks and skills add up to 21 each (52 total).
 
-## The mod is too hard!
-Go to `Options > Mod Options > Criminal Dawn` and you can change the difficulty cap. The difficulty
-increases towards the cap as you progress through a run and receive items.
-
-## I don't like the mutators.
-Go to `Options > Mod Options > Criminal Dawn` and you can change the mutator mode. There are
-four options:
-- **Off:** No random mutators will generate. Friendly Fire (Hard+) and Winters' Shields (Death Wish+) will still be enabled.
-- **On:** Number of mutators will scale with heist number (1 mutator for first heist, 2 for second heist, etc).
-- **On + Scaling (default):** Number of mutators will also scale with items received in the same way as difficulty.
-- **Inverted Scaling:** Number of mutators will start maxed out (based on difficulty setting), but decrease as you receive items.
-
 ## Can I get a list of gameplay changes this mod makes?
 Coming in v0.6.0 (not currently live):
 - **Kickstarter** is guaranteed to repair drills on melee (50% chance in vanilla).
@@ -141,6 +129,18 @@ Coming in v0.6.0 (not currently live):
   - **Improved Combined Tactical Vest:** 7.5s regen (ignores suppression).
 - **Tooth and Claw** isn't a fixed 1.5s armour regen on armour break - it's now half of your normal regen time, to a minimum of 1.5s.
 - Enemy health is locked at **Overkill** values on all difficulties, with a lower headshot/crit multiplier (same as vanilla Normal/Hard).
+
+## The mod is too hard!
+Go to `Options > Mod Options > Criminal Dawn` and you can change the difficulty cap. The difficulty
+increases towards the cap as you progress through a run and receive items.
+
+## I don't like the mutators.
+Go to `Options > Mod Options > Criminal Dawn` and you can change the mutator mode. There are
+four options:
+- **Off:** No random mutators will generate. Friendly Fire (Hard+) and Winters' Shields (Death Wish+) will still be enabled.
+- **On:** Number of mutators will scale with heist number (1 mutator for first heist, 2 for second heist, etc).
+- **On + Scaling (default):** Number of mutators will also scale with items received in the same way as difficulty.
+- **Inverted Scaling:** Number of mutators will start maxed out (based on difficulty setting), but decrease as you receive items.
 
 ## I keep getting [heist] and it sucks.
 Go to `Options > Mod Options > Criminal Dawn` and you can disable any heist in the game.
