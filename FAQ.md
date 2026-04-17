@@ -137,7 +137,7 @@ Coming in v0.6.0 (not currently live):
   - **Flak Jacket:** 4.5s regen (ignores suppression).
   - **Combined Tactical Vest:** 6s regen (ignores suppression).
   - **Improved Combined Tactical Vest:** 7.5s regen (ignores suppression).
-- Enemy health is locked at **Overkill** values on all difficulties, with a lower headshot multiplier (same as vanilla Normal/Hard).
+- Enemy health is locked at **Overkill** values on all difficulties, with a lower headshot/crit multiplier (same as vanilla Normal/Hard).
 
 ## I keep getting [heist] and it sucks.
 Go to `Options > Mod Options > Criminal Dawn` and you can disable any heist in the game.
