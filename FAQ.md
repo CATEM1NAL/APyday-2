@@ -99,7 +99,7 @@ Set the key to whatever you want, and now you can see the full list at any time!
 ## How many upgrades do I get in a playthrough?
 7 Perma-Skills, 7 Perma-Perks, 13 Skills, 13 Perks, and at least 7 Stat Boosts.
 
-There are also 2 Drill Sawgeant upgrades and 2 Nine Lives upgrades.
+There are also 6 Drill Sawgeant upgrades and 8 Nine Lives upgrades.
 
 ### The fuck is a Perma-Skill/Perk?
 Basically a progressive line of upgrades. The Perma-Perks are the universal perk cards (with the
@@ -109,16 +109,6 @@ Perma-Skill allows you to bag bodies and the third Perma-Skill allows you to int
 
 ### Those are some weird numbers.
 I was leaning into PAYDAY 2's playing card motif, so the perks and skills add up to 21 each (52 total).
-
-### Two Nine Lives upgrades?
-Yes! It turns out there's a second upgrade for Nine Lives in the base game which gives you 3 more
-downs instead of 1. Makes sense as to why it was never used, but it makes my life more convenient.
-
-### So all the upgrades in the mod are vanilla?
-Yep! Everything currently in the mod is something that already exists within the game. I haven't
-looked into making custom upgrades yet, but it is something I want to do eventually. There are a
-decent number of unused upgrades in the game's code that I've enabled though, so you'll probably
-see some stuff you've never seen before.
 
 ## The mod is too hard!
 Go to `Options > Mod Options > Criminal Dawn` and you can change the difficulty cap. The difficulty
@@ -131,6 +121,23 @@ four options:
 - **On:** Number of mutators will scale with heist number (1 mutator for first heist, 2 for second heist, etc).
 - **On + Scaling (default):** Number of mutators will also scale with items received in the same way as difficulty.
 - **Inverted Scaling:** Number of mutators will start maxed out (based on difficulty setting), but decrease as you receive items.
+
+## Can I get a list of gameplay changes this mod makes?
+Coming in v0.6.0 (not currently live):
+- **Kickstarter** is guaranteed to repair drills on melee (50% chance in vanilla).
+- If you get the associated skill, all drills are guaranteed to be auto restarters (max 30% chance in vanilla).
+- **Drill Sawgeant** now also applies to computer hacks.
+- Stamina has been removed.
+- Doctor bags only restore one down (restore all downs in vanilla) and hold 3 charges base (2 charges in vanilla).
+- Lighter armours recover faster, while heavier armours take longer to recover:
+  - **Two-Piece Suit:** 1s regen (affected by suppression).
+  - **Lightweight Ballistic Vest:** 1.5s regen (affected by suppression).
+  - **Ballistic Vest:** 2.5s regen (affected by suppression).
+  - **Heavy Ballistic Vest:** 3.5s regen (affected by suppression).
+  - **Flak Jacket:** 4.5s regen (ignores suppression).
+  - **Combined Tactical Vest:** 6s regen (ignores suppression).
+  - **Improved Combined Tactical Vest:** 7.5s regen (ignores suppression).
+- Enemy health is locked at **Overkill** values on all difficulties, with a lower headshot multiplier (same as vanilla Normal/Hard).
 
 ## I keep getting [heist] and it sucks.
 Go to `Options > Mod Options > Criminal Dawn` and you can disable any heist in the game.
