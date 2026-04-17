@@ -130,9 +130,11 @@ Coming in v0.6.0 (not currently live):
 - **Tooth and Claw** isn't a fixed 1.5s armour regen on armour break - it's now half of your normal regen time, to a minimum of 1.5s.
 - Enemy health is locked at **Overkill** values on all difficulties, with a lower headshot/crit multiplier (same as vanilla Normal/Hard).
 
-## The mod is too hard!
+## The mod is too easy/hard!
 Go to `Options > Mod Options > Criminal Dawn` and you can change the difficulty cap. The difficulty
 increases towards the cap as you progress through a run and receive items.
+
+The early game will generally be easy, but increase in difficulty as you play more.
 
 ## I don't like the mutators.
 Go to `Options > Mod Options > Criminal Dawn` and you can change the mutator mode. There are
