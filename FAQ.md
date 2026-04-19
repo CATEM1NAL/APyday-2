@@ -122,7 +122,7 @@ Coming in v0.6.0 (not currently live):
   - **Flak Jacket:** 4.5s regen (ignores suppression).
   - **Combined Tactical Vest:** 6s regen (ignores suppression).
   - **Improved Combined Tactical Vest:** 7.5s regen (ignores suppression).
-- **Tooth and Claw** isn't a fixed 1.5s armour regen on armour break - it's now half of your normal regen time, to a minimum of 1.5s.
+- **Tooth and Claw** (Hitman 9) isn't a fixed 1.5s armour regen on armour break - it's now half of your normal regen time, to a minimum of 1.5s.
 - Enemy health is locked at **Overkill** values on all difficulties, with a lower headshot/crit multiplier (same as vanilla Normal/Hard).
 - The grace period for taking damage now only applies on armour break, varies with difficulty, and enemy damage is locked at **Hard** values.
 - Snipers cannot penetrate player armour.
