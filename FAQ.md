@@ -124,8 +124,16 @@ Coming in v0.6.0 (not currently live):
   - **Improved Combined Tactical Vest:** 7.5s regen (ignores suppression).
 - **Tooth and Claw** (Hitman 9) isn't a fixed 1.5s armour regen on armour break - it's now half of your normal regen time, to a minimum of 1.5s.
 - Enemy health is locked at **Overkill** values on all difficulties, with a lower headshot/crit multiplier (same as vanilla Normal/Hard).
-- The grace period for taking damage now only applies on armour break, varies with difficulty, and enemy damage is locked at **Hard** values.
-- Snipers cannot penetrate player armour.
+- Enemy damage is locked at **Hard** values, with some tweaks for problematic enemies to bring them in line.
+- Enemies cannot penetrate player armour.
+- Damage grace period only applies on armour break and duration varies with difficulty:
+  - **Normal:** 2 seconds.
+  - **Hard:** 1.5 seconds.
+  - **Very Hard:** 1 second.
+  - **Overkill:** 0.75 seconds.
+  - **Mayhem:** 0.5 seconds.
+  - **Death Wish:** 0.25 seconds.
+  - **Death Sentence:** No grace period.
 - Dodge is no longer random, instead stacking for each shot you take until it exceeds 100%. With 25% dodge you will take 3 shots and then dodge 1, for example.
 - Damage absorption cannot reduce damage to 0.
 
