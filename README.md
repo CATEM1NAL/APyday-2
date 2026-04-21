@@ -1,7 +1,7 @@
 # PAYDAY 2: Criminal Dawn
 PAYDAY 2 mod that turns the game into a multiworld roguelite, powered by [Archipelago](https://archipelago.gg).
 
-[FAQ](https://github.com/CATEM1NAL/PD2-Criminal-Dawn/blob/main/FAQ.md) • [Trello Board](https://trello.com/b/iiMFiVjE/payday-2-criminal-dawn-apworld) • [APWorld Repo](https://github.com/CATEM1NAL/Archipelago/tree/payday2) • [My Other Stuff](https://ema.stupidcat.uk/)
+[FAQ](https://github.com/CATEM1NAL/PD2-Criminal-Dawn/blob/main/FAQ.md) • [APWorld Repo](https://github.com/CATEM1NAL/Archipelago/tree/payday2) • [My Other Stuff](https://ema.stupidcat.uk/)
 
 ## Why?
 Because Archipelago is fucking awesome and deserves more implementations.
@@ -52,4 +52,4 @@ how it works, please refer to the [FAQ](https://github.com/CATEM1NAL/PD2-Crimina
 Thank you for your constructive criticism. I will not take this into account.
 
 ---
-[FAQ](https://github.com/CATEM1NAL/PD2-Criminal-Dawn/blob/main/FAQ.md) • [Trello Board](https://trello.com/b/iiMFiVjE/payday-2-criminal-dawn-apworld) • [APWorld Repo](https://github.com/CATEM1NAL/Archipelago/tree/payday2) • [My Other Stuff](https://ema.stupidcat.uk/)
+[FAQ](https://github.com/CATEM1NAL/PD2-Criminal-Dawn/blob/main/FAQ.md) • [APWorld Repo](https://github.com/CATEM1NAL/Archipelago/tree/payday2) • [My Other Stuff](https://ema.stupidcat.uk/)
