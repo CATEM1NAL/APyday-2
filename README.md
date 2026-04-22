@@ -48,8 +48,5 @@ There wouldn't be much point if it wasn't! Ignoring the obvious argument I could
 (which is a bullshit non-answer), the mod was built to support multiplayer basically from the start. For more details about this and
 how it works, please refer to the [FAQ](https://github.com/CATEM1NAL/PD2-Criminal-Dawn/blob/main/FAQ.md#is-this-multiplayer).
 
-## I don't like you and this APWorld concept sucks.
-Thank you for your constructive criticism. I will not take this into account.
-
 ---
 [FAQ](https://github.com/CATEM1NAL/PD2-Criminal-Dawn/blob/main/FAQ.md) • [APWorld Repo](https://github.com/CATEM1NAL/Archipelago/tree/payday2) • [My Other Stuff](https://ema.stupidcat.uk/)
