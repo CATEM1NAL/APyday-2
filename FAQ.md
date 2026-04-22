@@ -39,7 +39,7 @@ Score Checks: 77
 All DLC that you verifiably own is accounted for by the mod, and it automatically adds the corresponding
 content into the appropriate pools. The safe house has also been modified to make Scarface, Bodhi,
 Wick, and Jimmy's rooms available to upgrade even if you don't have access to them (otherwise the
-world could get softlocked - all unlocks that requires licensed content will still be unavailable).
+world would get softlocked - all unlocks that require licensed content will still be unavailable).
 
 Another subtle change is that you don't need to follow the community hub to access community content -
 this tends to be confusing for players that don't understand how the community items work, and the fact
