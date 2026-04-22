@@ -88,7 +88,7 @@ completed, etc). These are always progression items.
 3. You can now connect to any other lobby in the same multiworld!
 
 ## How do I see my current skills/perks/stat boosts?
-In the inventory clicking on skills or perks will open the upgrade menu.
+Clicking skills or perks in the inventory will open the upgrade menu.
 
 You can also see this menu in game by going to `Options > Mod Keybinds > Criminal Dawn Upgrades`.
 Set the key to whatever you want, and now you can see the full list at any time!
