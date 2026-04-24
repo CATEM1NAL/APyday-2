@@ -136,7 +136,7 @@ Coming in v0.6.0 (not currently live):
 - Snipers don't have lasers on Mayhem+.
 - Shields are replaced with Winters shields on Death Wish+.
 - Enemies cannot penetrate player armour.
-- Enemies cannot steal bags.
+- Enemies cannot pick up bags.
 - Damage grace period only applies on armour break and duration varies with difficulty. Additionally, revive health is different per difficulty:
   - **Normal:** 2 second grace period, revived with 50% health (10% more than vanilla).
   - **Hard:** 1.5 second grace period, revived with 40% health (same as vanilla).
