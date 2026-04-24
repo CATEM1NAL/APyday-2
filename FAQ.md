@@ -146,7 +146,8 @@ Coming in v0.6.0 (not currently live):
   - **Death Wish:** 0.25 second grace period, revived with 15% health (5% more than vanilla).
   - **Death Sentence:** No grace period, revived with 10% health (same as vanilla).
 - Dodge is no longer random, instead stacking for each shot you take until it exceeds 100%. With 25% dodge you will take 3 shots and then dodge 1, for example.
-  - Each consecutive dodge also adds a stack of **entropy** (5% dodge penalty) to prevent insane dodge values from being untouchable. Entropy is reset upon taking damage. 
+  - Each consecutive dodge also adds a stack of **entropy** (5% dodge penalty) to prevent insane dodge values from being untouchable. Entropy is reset upon taking damage.
+  - **Agility Shield** now makes the effects of entropy worse to combat infinite dodge armour regen.
 - Damage absorption cannot reduce damage to 0.
 
 ## The mod is too easy/hard!
