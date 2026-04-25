@@ -155,6 +155,8 @@ Coming in v0.6.0 (not currently live):
 Go to `Options > Mod Options > Criminal Dawn` in-game and you can change the difficulty cap. The difficulty
 increases towards the cap as you progress through a run and receive items.
 
+It's worth noting that the early game *will* be harder than vanilla PAYDAY 2, due to how the mod is designed.
+
 ## I don't like the mutators.
 Go to `Options > Mod Options > Criminal Dawn` in-game and you can change the mutator mode. There are
 four options:
