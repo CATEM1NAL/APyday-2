@@ -293,12 +293,11 @@ Hooks:OverrideFunction(MenuCallbackHandler, "abort_mission", function(self)
   if game_state_machine:current_state_name() == "disconnected" then return end
 
 	local function yes_func()
-		--if game_state_machine:current_state_name() ~= "disconnected" then
+		NetworkHelper:SendToPeers("CrimDawn_ResetRun", true)
 	  CrimDawn:RunReset(FileIdent)
 
 		self:load_start_menu_lobby()
 		managers.preplanning:reset_rebuy_assets()
-		--end
 	end
 
 	managers.menu:show_abort_mission_dialog({ yes_func = yes_func })

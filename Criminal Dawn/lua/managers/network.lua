@@ -53,7 +53,12 @@ if NetworkHelper:IsClient() then -- Disable PONR (overrides/peer_sync.lua)
     CrimDawn.state.maskup_time = -1
   end)
 
--- Syncing score (score_handler.lua)
+  NetworkHelper:AddReceiveHook("CrimDawn_ResetRun", "CrimDawn_PeerResetRun", function(data, sender)
+    CrimDawn.Log(FileIdent, "Host abandoned run")
+    CrimDawn:RunReset(FileIdent)
+  end)
+
+  -- Syncing score (score_handler.lua)
   NetworkHelper:AddReceiveHook("CrimDawn_SendPoints", "CrimDawn_ReceivePoints", function(data, sender)
     if CrimDawn.state.cap_reached then CrimDawnClient:PollTimeUpgrades()
       if Global.CrimDawn.data.game.score < Global.CrimDawn.data.game.score_cap then
