@@ -144,7 +144,7 @@ I was leaning into PAYDAY 2's playing card motif, so the perks and skills add up
 - Dodge is no longer random, instead stacking for each shot you take until it exceeds 100%. With 25% dodge you will take 3 shots and then dodge 1, for example.
   - Each consecutive dodge also adds a stack of **entropy** (5% dodge penalty) to prevent insane dodge values from being untouchable. Entropy is reset upon taking damage.
 - Sicario's smoke bomb now provides a fixed +50% dodge (unaffected by entropy and works with armour).
-- **Agility Shield** recovers 10% of your armour on dodge (all armour in vanilla).
+- **Agility Shield** (Sicario 7) recovers 10% of your armour on dodge (all armour in vanilla).
 - Damage taken cannot be reduced below 1.
 
 It's worth noting that the early game *will* be harder than vanilla PAYDAY 2 due to how the mod is designed,
