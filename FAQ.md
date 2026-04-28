@@ -174,6 +174,9 @@ the game to crash on heist generation, so uh... don't do that.
 
 Disabling heists has no effect during campaign runs.
 
+### I really, *really*, do not want to play the stealth only heists.
+**Car Shop** is tier 1, **Shadow Raid** is tier 3, **Murky Station** and **Yacht Heist** are tier 4, **Breakin' Feds** is tier 5.
+
 ## I'm playing but nothing is happening.
 Did you connect to a different multiworld while in a lobby? In this case the game will allow you
 to keep playing, but you won't be able to make any progress or receive any items. Always restart
