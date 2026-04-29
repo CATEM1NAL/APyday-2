@@ -44,6 +44,11 @@ As long as it isn't a gameplay overhaul or a mod that adds new content (new weap
 it should work fine! Custom weapons will probably be available from the start, and custom heists just
 won't appear at all.
 
+The world has built in support for BigLobby, but in my testing it seemed a little unstable.
+I left it in as an option in the YAML since it *is* pretty neat, even if a little broken. I don't
+recommend it as a serious option though.
+
+### Which custom HUDs are compatible?
 Due to this mod adding a persistent point of no return timer, using unused upgrades, and modifying
 how parts of the game work, some custom HUDs might be a bit fucky. From my testing there won't be any major
 issues but most HUDs *won't* tell you if an assault is currently in progress, and some HUDs may
@@ -51,9 +56,10 @@ potentially hide the hostage counter too. Additionally, info HUDs may give misle
 stats in some cases. Out of all the HUDs I've tried, only MUI works exactly as intended.
 VanillaHUD+ works pretty well but some of the buff info may be incorrect.
 
-The world has built in support for BigLobby, but in my testing it seemed a little unstable.
-I left it in as an option in the YAML since it *is* pretty neat, even if a little broken. I don't
-recommend it as a serious option though.
+#### HUD Settings:
+**MUI:** Works out of the box.  
+**VanillaHUD+:** Works out of the box, HUDlist buffs may be incorrect.  
+**Void UI:** Disable the assault panel.
 
 ## Does this work in VR?
 No idea! Feel free to give it a shot and tell me how it goes, but realistically it *should* work?
