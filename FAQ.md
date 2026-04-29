@@ -75,8 +75,8 @@ Stamina circle can be disabled at `General HUD Panel Options > Player Panel > Sh
 **[Void UI](https://modworkshop.net/mod/20997):** Works perfectly after disabling assault panel.  
 **[CS HUD](https://modworkshop.net/mod/29734):** Works perfectly after disabling assault panel (`Components > Assault Panel`).  
 **[Hotline Miami Hud](https://modworkshop.net/mod/27294):** Works perfectly after disabling assault panel (`Hud Options > Assault Panel > Flashing Assault Panel`).  
-**[Restoration HUD Standalone](https://modworkshop.net/mod/28118):** Works perfectly after disabling assault panel, but first you have to turn the HUD on (why???).  
-Disable "Debug Stamina Indicator" and "Alpha Assault Tape".
+**[Restoration HUD](https://modworkshop.net/mod/28118):** Works perfectly after disabling assault panel, but first you have to turn the HUD on (why is it off by default???).  
+Enable "Alpha HUD On/Off". Disable "Debug Stamina Indicator" and "Alpha Assault Tape".
 
 **[PDTH HUD](https://modworkshop.net/mod/19900):** Works, but no assault indicator. Fixed by disabling "PDTH Style HUD Assault Corner", but ruins the aesthetic.  
 **[Sora's HUD Reborn](https://modworkshop.net/mod/22152):** Works, but no assault indicator. Stamina bar can be disabled at `HUD Options > Activate the Stamina Bar`.  
