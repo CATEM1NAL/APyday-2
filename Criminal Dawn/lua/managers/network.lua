@@ -1,4 +1,4 @@
-local FileIdent = "Network"
+local FileIdent = "NetworkManager"
 
 -- Assign matchmaking key
 if Global.CrimDawn.data.game.seed then

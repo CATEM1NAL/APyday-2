@@ -1,4 +1,4 @@
-local FileIdent = "Menu"
+local FileIdent = "MenuManager"
 
 -- PLAY BUTTON
 function MenuCallbackHandler:CrimDawn_CreateLobby()

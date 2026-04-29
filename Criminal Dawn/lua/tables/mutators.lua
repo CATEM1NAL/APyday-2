@@ -1,4 +1,4 @@
-local FileIdent = "mutator_table"
+local FileIdent = "MutatorTable"
 
 for _, mutator in ipairs(managers.mutators:mutators()) do managers.mutators:set_enabled(mutator, false) end
 Global.mutators._peers_notified = {}

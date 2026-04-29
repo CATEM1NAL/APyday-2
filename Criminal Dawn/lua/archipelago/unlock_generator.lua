@@ -1,4 +1,4 @@
-local FileIdent = "unlock_generator"
+local FileIdent = "UnlockGenerator"
 
 local function AnyObtained(reqs, req_type)
   for _, item in ipairs(reqs) do

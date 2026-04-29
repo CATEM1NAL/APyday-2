@@ -262,6 +262,8 @@ Global.CrimDawn = {
 }
 
 function Global.CrimDawn:Init()
+  local ModVersion = BLT.Mods:GetModByName("Criminal Dawn").version
+  CrimDawn.Log(FileIdent, "Playing Criminal Dawn v" .. ModVersion)
   CrimDawn.Log(FileIdent, "Attempting to load save file...")
   self.data = io.load_as_json(CrimDawn.SaveFile)
 

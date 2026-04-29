@@ -187,7 +187,7 @@ function CrimDawnClient:PollData()
   end
 
   -- Saws
-  if Global.CrimDawn.data.x.saws == 0 and self.data["OVE9000 Saw"] then
+  if Global.CrimDawn.data.x.saws == 0 and self.data["OVE9000 Saw"] >= 1 then
     CrimDawn.Log(FileIdent, "Unlocking first saw")
     local saw = ({ "saw", "saw_secondary" })[math.random(2)]
     Global.CrimDawn.data.unlocks[saw] = true

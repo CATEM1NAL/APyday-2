@@ -1,5 +1,9 @@
-Hooks:PostHook(GameSetup, "init_finalize", "CrimDawn_CreatePONR", function()
-  local loc = managers.localization
+local FileIdent = "GameSetup"
+
+Hooks:PostHook(GameSetup, "init_finalize", "CrimDawn_GameSetupInit", function()
+  local loc, script = managers.localization, managers.mission._scripts.default._elements
+  local level = managers.job:current_level_id()
+  CrimDawn.Log(FileIdent, "Level ID: " .. level)
 
   local ponrElement = {
     id = "crimdawn_ponr",
@@ -7,7 +11,56 @@ Hooks:PostHook(GameSetup, "init_finalize", "CrimDawn_CreatePONR", function()
     values = { elements = {} }
   }
 
-  managers.mission._scripts.default._elements.crimdawn_ponr = ElementPointOfNoReturn:new(managers.mission, ponrElement)
+  script.crimdawn_ponr = ElementPointOfNoReturn:new(managers.mission, ponrElement)
+
+  -- Heist specific timer elements we want to modify
+  local TimerTweaks = { big = {},
+
+    -- Mandatory meth cooking
+    alex_1 = { reChance = "on_executed" },
+    rat = { reChance = "on_executed" },
+    mex_cooking = { meth_taken = "on_executed", counter_below3 = "on_executed" },
+
+    -- Assorted timers
+    red2 = { logic_link_018 = "on_executed", logic_link_020 = "on_executed" }, -- FWB thermite
+    wwh = { ["120_seconds"] = "timer" }, -- Alaskan Deal fuel
+    brb = { ["30"] = "timer" }, -- Brooklyn Bank circle cutter
+    roberts = { logic_timer_operator_001 = "time", logic_timer_operator_002 = "time", logic_timer_operator_003 = "time" },
+    pbr = { refuel_timer = "timer" },
+  }
+
+  -- Totally unnecessary Big Bank thermite change
+  if level == "big" then
+    local NextDelay = 150
+    for i = 1, 18 do script["ignite_0" .. i]._values.base_delay = NextDelay
+      TimerTweaks.big["ignite_0" .. i] = "base_delay"
+    end
+    NextDelay = NextDelay * 0.5
+  end -- Still takes 5 minutes total
+
+  local TimerMult = math.min(Global.CrimDawn.data.game.progression_items * 2, 99)
+  TimerMult = 1 - (TimerMult / 100)
+
+  -- Modify element timers
+  if TimerTweaks[level] then
+    for ElementName, ElementValue in pairs(TimerTweaks[level]) do
+      for BaseElementName, BaseElement in pairs(script) do
+        if BaseElement._editor_name == ElementName and BaseElement._values[ElementValue] then
+          CrimDawn.Log(FileIdent, "Found mission element " .. ElementName)
+          --Utils.PrintTable(BaseElement, 2)
+
+          if ElementValue ~= "on_executed" then
+            BaseElement._values[ElementValue] = BaseElement._values[ElementValue] * TimerMult
+            --Utils.PrintTable(BaseElement._values, 1)
+
+          else for _, ExecutedElement in ipairs(BaseElement._values.on_executed) do
+            ExecutedElement.delay = ExecutedElement.delay * TimerMult
+          end break end
+
+        end
+      end
+    end
+  end
 
   math.randomseed(os.time() + (os.clock() * 1000))
   if math.random() > 0.1 then

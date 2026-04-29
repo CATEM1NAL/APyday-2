@@ -1,4 +1,4 @@
-local FileIdent = "Player Damage"
+local FileIdent = "PlayerDamage"
 
 -- Setup new values
 Hooks:PostHook(PlayerDamage, "init", "CrimDawn_InitPlayerDamage", function(self)
@@ -144,7 +144,7 @@ Hooks:OverrideFunction(PlayerDamage, "damage_bullet", function(self, attack_data
 	end
 
 	if dodge_value >= 1 then
-	  log(dodge_value .. " we dodged! Yippee!")
+	  --log(dodge_value .. " we dodged! Yippee!")
 	  self._dodge_stack = dodge_value - 1
 	  self._entropy = self._entropy + 1
 		if attack_data.damage > 0 then self:_send_damage_drama(attack_data, 0) end

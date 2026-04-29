@@ -1,4 +1,4 @@
-local FileIdent = "criminals"
+local FileIdent = "CriminalManager"
 
 local MaxBots = 3
 

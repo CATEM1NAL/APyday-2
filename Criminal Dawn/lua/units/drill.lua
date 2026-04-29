@@ -1,4 +1,5 @@
 Drill.on_hit_autorepair_chance = 1
+local RunLength, HeistsWon = Global.CrimDawn.data.game.run_length, Global.CrimDawn.data.game.heists_won
 
 -- THE ORIGINAL FUNCTION SUCKED ASS AND PISSED ME OFF SO I COMPLETELY REWROTE IT.
 Hooks:OverrideFunction(Drill, "set_skill_upgrades", function(self, upgrades)
@@ -29,9 +30,12 @@ Hooks:OverrideFunction(Drill, "set_skill_upgrades", function(self, upgrades)
 
   -- Speed upgrades
   local TimerGUI = self._unit:timer_gui()
-  local TimerMult = math.min(Global.CrimDawn.data.game.progression_items * 2, 99)
-  TimerMult = 1 - (TimerMult / 100)
   local SpeedUpgrade = math.max(upgrades.speed_upgrade_level or 0, self._skill_upgrades.speed_upgrade_level or 0)
+  local TimerMult = 1
+  if HeistsWon >= RunLength or managers.job:current_level_id() ~= "vit" then
+    TimerMult = math.min(Global.CrimDawn.data.game.progression_items * 2, 99)
+    TimerMult = 1 - (TimerMult / 100)
+  end
 
   if SpeedUpgrade > 0 then
 	  AddBGIcon("drillgui_icon_faster", TimerGUI:get_upgrade_icon_color("upgrade_color_" .. SpeedUpgrade))

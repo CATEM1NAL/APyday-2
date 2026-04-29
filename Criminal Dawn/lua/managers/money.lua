@@ -1,4 +1,4 @@
-local FileIdent = "moneymanager"
+local FileIdent = "MoneyManager"
 
 Hooks:PostHook(MoneyManager, "save", "CrimDawn_MoneySave", function(self, data)
   if Global.CrimDawn.data.game.cash ~= Application:digest_value(data.MoneyManager.total, false) then

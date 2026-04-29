@@ -1,4 +1,4 @@
-local FileIdent = "achievementmanager"
+local FileIdent = "AchievementManager"
 
 Hooks:PostHook(AchievmentManager, "load", "CrimDawn_AchievementLoad", function(self)
   local melee = Global.CrimDawn.tables.weapons.melee

@@ -1,4 +1,4 @@
-local FileIdent = "dlc"
+local FileIdent = "DLC"
 
 local heist = Global.CrimDawn.tables.heists
 local primary = Global.CrimDawn.tables.weapons.primaries

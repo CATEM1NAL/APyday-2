@@ -1,4 +1,4 @@
-local FileIdent = "chatroom"
+local FileIdent = "ChatManager"
 
 Hooks:PostHook(ChatManager, "send_message", "CrimDawn_SendChatMessage", function(self, _, _, message)
   Global.CrimDawn.data.chat.message = message
