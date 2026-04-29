@@ -12,7 +12,7 @@ to be an experience closer to something like PAYDAY: The Heist or PAYDAY 3, whil
 PAYDAY 2 in the late-game. Turning the game into a roguelite also provides a solution to the number one problem: what's the goal?
 
 ## So what *is* the goal?
-Beat X amount of heists in a row without failing. The heists are grouped into tiers that loosely follow heist complexity/story progress,
+Beat X heists in a row without failing. The heists are grouped into tiers that loosely follow heist complexity/story progress,
 so later heists tend to be heists that are grander in scale or concept than those that come before. Jewelry Store and Ukrainian Job are
 only valid in the 1st of 6 heist tiers for example.
 
