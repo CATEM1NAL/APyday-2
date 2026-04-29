@@ -64,18 +64,19 @@ Below is a list of every HUD mod that I've tested, how well they work, and any a
 **[BL2HUD](https://modworkshop.net/mod/23623):** Works perfectly.  
 **[Minimalist HUD Ultimate](https://modworkshop.net/mod/36309):** Works perfectly.
 
+**[Enhanced Vanilla Hud](https://modworkshop.net/mod/43776):** Works perfectly, stamina circle can be disabled at `HUD > Player HUD > Stamina Display`.  
+**[HEVHUD](https://modworkshop.net/mod/27954):** Works perfectly, but can't disable stamina bar.
+
 **[Warframe HUD](https://modworkshop.net/mod/36010):** Works perfectly, but some buffs may show incorrect values.  
 **[PocoHud3](https://modworkshop.net/mod/40870):** Works perfectly, but some buffs may show incorrect values.  
 **[VanillaHUD+](https://modworkshop.net/mod/25629):** Works perfectly, but some hudlist buffs may show incorrect values.  
 Stamina circle can be disabled at `General HUD Panel Options > Player Panel > Show Stamina`.  
 
-**[Enhanced Vanilla Hud](https://modworkshop.net/mod/43776):** Works perfectly, stamina circle can be disabled at `HUD > Player HUD > Stamina Display`.  
 **[Void UI](https://modworkshop.net/mod/20997):** Works perfectly after disabling assault panel.  
 **[CS HUD](https://modworkshop.net/mod/29734):** Works perfectly after disabling assault panel (`Components > Assault Panel`).  
 **[Hotline Miami Hud](https://modworkshop.net/mod/27294):** Works perfectly after disabling assault panel (`Hud Options > Assault Panel > Flashing Assault Panel`).  
-**[HEVHUD](https://modworkshop.net/mod/27954):** Works perfectly, but can't disable stamina bar.  
-**[Restoration HUD Standalone](https://modworkshop.net/mod/28118):** Works perfectly, but first you have to enable it in the mod options (why???).  
-Turn off "Debug Stamina Indicator" and "Alpha Assault Tape".
+**[Restoration HUD Standalone](https://modworkshop.net/mod/28118):** Works perfectly after disabling assault panel, but first you have to turn the HUD on (why???).  
+Disable "Debug Stamina Indicator" and "Alpha Assault Tape".
 
 **[PDTH HUD](https://modworkshop.net/mod/19900):** Works, but no assault indicator. Fixed by disabling "PDTH Style HUD Assault Corner", but ruins the aesthetic.  
 **[Sora's HUD Reborn](https://modworkshop.net/mod/22152):** Works, but no assault indicator. Stamina bar can be disabled at `HUD Options > Activate the Stamina Bar`.  
