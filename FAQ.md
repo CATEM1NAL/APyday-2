@@ -109,7 +109,6 @@ I was leaning into PAYDAY 2's playing card motif, so the perks and skills add up
 ## Are there any core gameplay changes I should know about?
 - **Kickstarter** is guaranteed to repair drills on melee (50% chance in vanilla).
 - If you get the associated skill, all drills are guaranteed to be auto restarters (max 30% chance in vanilla).
-- **Drill Sawgeant** also applies to computer hacks.
 - Stamina has been removed.
 - Remaining downs now persist between heists. You restore one between heists.
 - You come out of custody with no extra downs (all downs in vanilla).
