@@ -45,7 +45,7 @@ it should work fine! Custom weapons will probably be available from the start, a
 won't appear at all.
 
 Due to this mod adding a persistent point of no return timer, using unused upgrades, and modifying
-how parts of the game work, some HUDs might be a bit fucky. From my testing there won't be any major
+how parts of the game work, some custom HUDs might be a bit fucky. From my testing there won't be any major
 issues but most HUDs *won't* tell you if an assault is currently in progress, and some HUDs may
 potentially hide the hostage counter too. Additionally, info HUDs may give misleading or incorrect
 stats in some cases. Out of all the HUDs I've tried, only MUI worked *exactly* as intended.
