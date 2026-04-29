@@ -19,7 +19,7 @@ only valid in the 1st of 6 heist tiers for example.
 Beating a few heists in a row sounds easy, right?
 
 At the start of the game, each run has a 10 minute point of no return timer that begins counting down after masking up. This timer
-persists between heists, capping the length of each run. As you receive progression items the timer extends and your drill speed increases,
+persists between heists, capping the length of each run. As you receive progression items the timer extends and heist objectives speed up,
 allowing you to get further than before.
 
 ## How do I send checks?
