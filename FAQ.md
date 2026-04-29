@@ -49,10 +49,10 @@ I left it in as an option in the YAML since it *is* pretty neat, even if a littl
 recommend it as a serious option though.
 
 ### Which custom HUDs are compatible?
-**MUI:** Works perfectly.  
-**VanillaHUD+:** Works, but hudlist buff icons can show incorrect values.  
-**Void UI:** Works perfectly if you disable the assault panel.
-**PDTH HUD:** Works, but assault indicator isn't visible.
+**[MUI](https://modworkshop.net/mod/46681):** Works perfectly.  
+**[VanillaHUD+](https://modworkshop.net/mod/25629):** Works, but hudlist buff icons can show incorrect values.  
+**[Void UI](https://modworkshop.net/mod/20997):** Works perfectly if you disable the assault panel.  
+**[PDTH HUD](https://modworkshop.net/mod/19900):** Works, but assault indicator isn't visible.  
 
 ## Does this work in VR?
 No idea! Feel free to give it a shot and tell me how it goes, but realistically it *should* work?
