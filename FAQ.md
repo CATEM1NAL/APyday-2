@@ -66,7 +66,8 @@ Below is a list of every HUD mod that I've tested, how well they work, and any a
 **[Minimalist HUD Ultimate](https://modworkshop.net/mod/36309):** Works perfectly.
 
 **[Enhanced Vanilla Hud](https://modworkshop.net/mod/43776):** Works perfectly, need to disable "stamina display" (`HUD > Player HUD`).  
-**[VanillaHUD+](https://modworkshop.net/mod/25629):** Works perfectly, but hudlist buffs can show incorrect values. Stamina circle can be disabled at `General HUD Panel Options > Player Panel > Show Stamina`.  
+**[VanillaHUD+](https://modworkshop.net/mod/25629):** Works perfectly, but hudlist buffs can show incorrect values. Stamina circle can be disabled at  
+`General HUD Panel Options > Player Panel > Show Stamina`.  
 **[Void UI](https://modworkshop.net/mod/20997):** Works perfectly after disabling assault panel.  
 **[Hotline Miami Hud](https://modworkshop.net/mod/27294):** Works perfectly after disabling "Flashing Assault Panel" (`Hud Options > Assault Panel`).  
 **[HEVHUD](https://modworkshop.net/mod/27954):** Works perfectly but can't disable stamina bar.  
