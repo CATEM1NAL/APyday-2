@@ -183,7 +183,7 @@ Disabling heists has no effect during campaign runs.
 ## I'm playing but nothing is happening.
 Did you connect to a different multiworld while in a lobby? In this case the game will allow you
 to keep playing, but you won't be able to make any progress or receive any items. Always restart
-the game after connecting to a multiworld.
+the game after connecting to a new multiworld.
 
 ## I'm trying to connect to a multiworld, but it disconnects instantly.
 Check the client! If something is going horribly wrong, it should tell you the reason. If nothing
