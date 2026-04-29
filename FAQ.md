@@ -50,6 +50,7 @@ recommend it as a serious option though.
 
 ### Which custom HUDs are compatible?
 If a HUD adds a stamina bar, you will probably want to turn it off (stamina is disabled in Criminal Dawn).
+
 **[MUI](https://modworkshop.net/mod/46681):** Works perfectly.  
 **[Void UI](https://modworkshop.net/mod/20997):** Works perfectly after disabling the assault panel.  
 **[VanillaHUD+](https://modworkshop.net/mod/25629):** Works perfectly, but hudlist buff icons can show incorrect values.  
