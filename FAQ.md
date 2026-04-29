@@ -148,9 +148,10 @@ I was leaning into PAYDAY 2's playing card motif, so the perks and skills add up
 - Damage taken cannot be reduced below 1.
 
 It's worth noting that the early game *will* be harder than vanilla PAYDAY 2 due to how the mod is designed,
-and even with a strong build you can die very fast if you are caught too heavily out of position.
-If that doesn't sound like something that appeals to you and you want to run around carefree, then this is
-not the game for you.
+and even with a strong build you can die very fast if you are caught too heavily out of position. If that
+doesn't sound like something that appeals to you and you want to run around carefree from the very beginning,
+then this is not the game for you (it's only in the late-game where you semi-consistently get builds that
+allow you to completely turn your brain off).
 
 ## The mod is too easy/hard!
 Go to `Options > Mod Options > Criminal Dawn` in-game and you can change the difficulty cap. The difficulty
