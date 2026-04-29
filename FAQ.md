@@ -79,8 +79,7 @@ Turn off "Debug Stamina Indicator" and "Alpha Assault Tape".
 
 **[PDTH HUD](https://modworkshop.net/mod/19900):** Works, but no assault indicator. Fixed by disabling "PDTH Style HUD Assault Corner", but ruins the aesthetic.  
 **[Sora's HUD Reborn](https://modworkshop.net/mod/22152):** Works, but no assault indicator. Stamina bar can be disabled at `HUD Options > Activate the Stamina Bar`.  
-**[HoloUI](https://modworkshop.net/mod/12501):** Works, but assault panel is broken.  
-Easiest fix is disabling "Assault HUD" on the "Main" tab, though this looks incredibly out of place.  
+**[HoloUI](https://modworkshop.net/mod/12501):** Works, but assault panel is broken. Easiest fix is disabling "Assault HUD" on the "Main" tab, though this looks incredibly out of place.  
 Through various settings it's possible to replace the heist timer with the PONR timer, but it's a little jank.
 
 **[Better Assault Indicator](https://modworkshop.net/mod/22712):** Doesn't work - hides hostage counter and no assault indicator.
