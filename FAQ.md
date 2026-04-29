@@ -57,16 +57,26 @@ assault panel), it will probably be fine!
 
 Any info HUD will likely show incorrect values for certain stats as the mod uses some upgrades that are inaccessible in vanilla.
 
-Below is a list of every HUD mod that I've tested, how well they work, and any steps needed to make them work.
+Below is a list of every HUD mod that I've tested, how well they work, and any additional steps needed.
 
 **[MUI](https://modworkshop.net/mod/46681):** Works perfectly.  
-**[Enhanced Vanilla Hud](https://modworkshop.net/mod/43776):** Works perfectly.  
-**[Void UI](https://modworkshop.net/mod/20997):** Works perfectly after disabling "assault panel".  
-**[HEVHUD](https://modworkshop.net/mod/27954):** Works perfectly, but can't disable stamina bar.  
-**[VanillaHUD+](https://modworkshop.net/mod/25629):** Works perfectly, but hudlist buff icons can show incorrect values.  
+**[HopHUD](https://modworkshop.net/mod/31306?tab=description):** Works perfectly.  
+**[Warframe HUD](https://modworkshop.net/mod/36010):** Works perfectly.   
+**[BL2HUD](https://modworkshop.net/mod/23623):** Works perfectly.  
+**[Minimalist HUD Ultimate](https://modworkshop.net/mod/36309):** Works perfectly.
+
+**[Enhanced Vanilla Hud](https://modworkshop.net/mod/43776):** Works perfectly, need to disable "stamina display" (`HUD > Player HUD`).  
+**[VanillaHUD+](https://modworkshop.net/mod/25629):** Works perfectly, but hudlist buffs can show incorrect values. Stamina circle can be disabled at `General HUD Panel Options > Player Panel > Show Stamina`.  
+**[Void UI](https://modworkshop.net/mod/20997):** Works perfectly after disabling assault panel.  
+**[Hotline Miami Hud](https://modworkshop.net/mod/27294):** Works perfectly after disabling "Flashing Assault Panel" (`Hud Options > Assault Panel`).  
+**[HEVHUD](https://modworkshop.net/mod/27954):** Works perfectly but can't disable stamina bar.  
+**[Restoration HUD Standalone](https://modworkshop.net/mod/28118):** Works perfectly, but first you have to enable it in the mod options (why???). Turn off "debug stamina indicator" and "alpha assault tape",
+otherwise you can't see hostage count or the assault ticker.
+
 **[PDTH HUD](https://modworkshop.net/mod/19900):** Works, but no assault indicator. Fixed by disabling "PDTH style HUD assault corner", but ruins the aesthetic.  
-**[Restoration HUD Standalone](https://modworkshop.net/mod/28118):** Works, but first you have to enable it in the mod options (why???). Turn off "debug stamina indicator" and "alpha assault tape",
-otherwise you can't see hostage count or the assault ticker.  
+**[HoloUI](https://modworkshop.net/mod/12501):** Works, but assault corner is broken. Easiest fix is disabling "Assault HUD" on the "Main" tab, but through various settings
+it's possible to replace the heist timer with the PONR timer.
+
 **[Better Assault Indicator](https://modworkshop.net/mod/22712):** Doesn't work - hides hostage counter and doesn't show assault ticker.  
 
 ## Does this work in VR?
