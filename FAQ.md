@@ -68,15 +68,16 @@ Below is a list of every HUD mod that I've tested, how well they work, and any a
 **[Enhanced Vanilla Hud](https://modworkshop.net/mod/43776):** Works perfectly, stamina circle can be disabled at `HUD > Player HUD > Stamina Display`.  
 **[VanillaHUD+](https://modworkshop.net/mod/25629):** Works perfectly, but hudlist buffs can show incorrect values. Stamina circle can be disabled at  
 `General HUD Panel Options > Player Panel > Show Stamina`.  
+**[CS HUD](https://modworkshop.net/mod/29734):** Works perfectly after disabling assault panel (`Components > Assault Panel`).  
 **[Void UI](https://modworkshop.net/mod/20997):** Works perfectly after disabling assault panel.  
 **[Hotline Miami Hud](https://modworkshop.net/mod/27294):** Works perfectly after disabling assault panel (`Hud Options > Assault Panel > Flashing Assault Panel`).  
 **[HEVHUD](https://modworkshop.net/mod/27954):** Works perfectly but can't disable stamina bar.  
-**[Restoration HUD Standalone](https://modworkshop.net/mod/28118):** Works perfectly, but first you have to enable it in the mod options (why???). Turn off "debug stamina indicator" and "alpha assault tape",
-otherwise you can't see hostage count or the assault ticker.
+**[Restoration HUD Standalone](https://modworkshop.net/mod/28118):** Works perfectly, but first you have to enable it in the mod options (why???). Turn off "Debug Stamina Indicator" and "Alpha Assault Tape".
 
-**[PDTH HUD](https://modworkshop.net/mod/19900):** Works, but no assault indicator. Fixed by disabling "PDTH style HUD assault corner", but ruins the aesthetic.  
-**[HoloUI](https://modworkshop.net/mod/12501):** Works, but assault corner is broken. Easiest fix is disabling "Assault HUD" on the "Main" tab, but through various settings
-it's possible to replace the heist timer with the PONR timer.
+**[PDTH HUD](https://modworkshop.net/mod/19900):** Works, but no assault indicator. Fixed by disabling "PDTH Style HUD Assault Corner", but ruins the aesthetic.  
+**[Sora's HUD Reborn](https://modworkshop.net/mod/22152):** Works, but no assault indicator. Stamina bar can be disabled at `HUD Options > Activate the Stamina Bar`.  
+**[HoloUI](https://modworkshop.net/mod/12501):** Works, but assault corner is broken. Easiest fix is disabling "Assault HUD" on the "Main" tab, though this looks incredibly out of place.
+Through various settings it's possible to replace the heist timer with the PONR timer, but it's a little jank.
 
 **[Better Assault Indicator](https://modworkshop.net/mod/22712):** Doesn't work - hides hostage counter and doesn't show assault ticker.  
 
