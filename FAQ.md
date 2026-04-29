@@ -65,6 +65,8 @@ Below is a list of every HUD mod that I've tested, how well they work, and any s
 **[HEVHUD](https://modworkshop.net/mod/27954):** Works perfectly, but can't disable stamina bar.  
 **[VanillaHUD+](https://modworkshop.net/mod/25629):** Works perfectly, but hudlist buff icons can show incorrect values.  
 **[PDTH HUD](https://modworkshop.net/mod/19900):** Works, but no assault indicator. Fixed by disabling "PDTH style HUD assault corner", but ruins the aesthetic.  
+**[Restoration HUD Standalone](https://modworkshop.net/mod/28118):** Works, but first you have to turn the enable it in the mod options (why???). Turn off "debug stamina indicator" and "alpha assault tape",
+otherwise you can't see hostage count or the assault ticker.  
 **[Better Assault Indicator](https://modworkshop.net/mod/22712):** Doesn't work - hides hostage counter and doesn't show assault ticker.  
 
 ## Does this work in VR?
