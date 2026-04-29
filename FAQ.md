@@ -65,11 +65,11 @@ Below is a list of every HUD mod that I've tested, how well they work, and any a
 **[BL2HUD](https://modworkshop.net/mod/23623):** Works perfectly.  
 **[Minimalist HUD Ultimate](https://modworkshop.net/mod/36309):** Works perfectly.
 
-**[Enhanced Vanilla Hud](https://modworkshop.net/mod/43776):** Works perfectly, need to disable "stamina display" (`HUD > Player HUD`).  
+**[Enhanced Vanilla Hud](https://modworkshop.net/mod/43776):** Works perfectly, stamina circle can be disabled at `HUD > Player HUD > Stamina Display`.  
 **[VanillaHUD+](https://modworkshop.net/mod/25629):** Works perfectly, but hudlist buffs can show incorrect values. Stamina circle can be disabled at  
 `General HUD Panel Options > Player Panel > Show Stamina`.  
 **[Void UI](https://modworkshop.net/mod/20997):** Works perfectly after disabling assault panel.  
-**[Hotline Miami Hud](https://modworkshop.net/mod/27294):** Works perfectly after disabling "Flashing Assault Panel" (`Hud Options > Assault Panel`).  
+**[Hotline Miami Hud](https://modworkshop.net/mod/27294):** Works perfectly after disabling assault panel (`Hud Options > Assault Panel > Flashing Assault Panel`).  
 **[HEVHUD](https://modworkshop.net/mod/27954):** Works perfectly but can't disable stamina bar.  
 **[Restoration HUD Standalone](https://modworkshop.net/mod/28118):** Works perfectly, but first you have to enable it in the mod options (why???). Turn off "debug stamina indicator" and "alpha assault tape",
 otherwise you can't see hostage count or the assault ticker.
