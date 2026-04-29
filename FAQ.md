@@ -50,8 +50,8 @@ recommend it as a serious option though.
 
 ### Which custom HUDs are compatible?
 **[MUI](https://modworkshop.net/mod/46681):** Works perfectly.  
+**[Void UI](https://modworkshop.net/mod/20997):** Works perfectly after disabling the assault panel.  
 **[VanillaHUD+](https://modworkshop.net/mod/25629):** Works, but hudlist buff icons can show incorrect values.  
-**[Void UI](https://modworkshop.net/mod/20997):** Works perfectly if you disable the assault panel.  
 **[PDTH HUD](https://modworkshop.net/mod/19900):** Works, but assault indicator isn't visible.  
 
 ## Does this work in VR?
