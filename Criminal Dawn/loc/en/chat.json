@@ -22,7 +22,8 @@
   "crimdawn_client_progression_upgrade" : "Timer extended by $TIME_GAINED seconds ($MINS_REMAINING minutes left)!\nToolSys speed increased by $SPEED% ($TOTAL_SPEED% faster)!",
   "crimdawn_client_extra_life" : "You now start each run with $LIVES lives!\n",
   "crimdawn_client_new_item" : "Received $ITEM ($CURRENT/$TOTAL)!\n",
-  "crimdawn_client_first_saw" : "Unlocked an OVE9000 saw!\n",
-  "crimdawn_client_second_saw" : "Unlocked second OVE9000 saw!\n",
+  "crimdawn_client_saw" : "Unlocked primary OVE9000 saw!\n",
+  "crimdawn_client_saw_secondary" : "Unlocked secondary OVE9000 saw!\n",
+  "crimdawn_client_laser_watch" : "Unlocked Laser Chronometer!\n",
   "crimdawn_client_coins" : "Received $NUM coins!\n",
 }

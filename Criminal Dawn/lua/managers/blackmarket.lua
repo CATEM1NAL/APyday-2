@@ -58,7 +58,8 @@ Hooks:OverrideFunction(BlackMarketManager, "_setup_unlocked_weapon_slots", funct
 end)
 
 Hooks:PostHook(BlackMarketManager, "_verfify_equipped", "CrimDawn_VerfifyDeployable", function(self)
-  if not Global.CrimDawn.data.unlocks[self:equipped_deployable()] and self:equipped_deployable() ~= "grenade_crate" then
+  local DefaultDeployable = (self:equipped_deployable() == "grenade_crate") or (self:equipped_deployable() == "spy_camera")
+  if not Global.CrimDawn.data.unlocks[self:equipped_deployable()] and not DefaultDeployable then
     self:equip_deployable({ target_slot = 1 })
   end
 end)

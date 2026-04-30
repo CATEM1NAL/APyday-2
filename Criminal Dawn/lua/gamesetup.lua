@@ -22,11 +22,23 @@ Hooks:PostHook(GameSetup, "init_finalize", "CrimDawn_GameSetupInit", function()
     mex_cooking = { meth_taken = "on_executed", counter_below3 = "on_executed" },
 
     -- Assorted timers
+    -- TimerOperator = "time", Timer = "timer"
     red2 = { logic_link_018 = "on_executed", logic_link_020 = "on_executed" }, -- FWB thermite
     wwh = { ["120_seconds"] = "timer" }, -- Alaskan Deal fuel
     brb = { ["30"] = "timer" }, -- Brooklyn Bank circle cutter
     roberts = { logic_timer_operator_001 = "time", logic_timer_operator_002 = "time", logic_timer_operator_003 = "time" },
-    pbr = { refuel_timer = "timer" },
+    pbr = { refuel_timer = "timer", bomb_timer = "timer" },
+    mia_1 = { hatch_timer_2min = "timer", hatch_timer_3min = "timer",
+              ["90s"] = "time", ["120"] = "time", ["180"] = "time" },
+    born = { start = "time" },
+    pal = { valve_timer = "timer" },
+    rvd2 = { start_wait_for_LN = "on_executed", seq_start_friendly_heli_fly_in = "on_executed" },
+    peta2 = { ["2min"] = "on_executed", ["1min"] = "on_executed", ["30s"] = "on_executed" },
+    shoutout_raid = { tick = "on_executed" },
+    jewelry_store = { policeAreHereRemoveNoAlarmEscape = "on_executed" },
+    run = { func_sequence_034 = "on_executed", func_sequence_033 = "on_executed",
+            func_sequence_032 = "on_executed", func_sequence_031 = "on_executed", },
+    mallcrasher = { delay = "on_executed" },
   }
 
   -- Totally unnecessary Big Bank thermite change

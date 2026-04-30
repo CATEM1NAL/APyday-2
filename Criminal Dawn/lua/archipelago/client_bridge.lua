@@ -187,25 +187,25 @@ function CrimDawnClient:PollData()
   end
 
   -- Saws
-  if Global.CrimDawn.data.x.saws == 0 and self.data["OVE9000 Saw"] >= 1 then
-    CrimDawn.Log(FileIdent, "Unlocking first saw")
-    local saw = ({ "saw", "saw_secondary" })[math.random(2)]
-    Global.CrimDawn.data.unlocks[saw] = true
-    managers.upgrades:aquire(saw)
-    Global.CrimDawn.data.x.saws = 1
-    ItemLog = ItemLog .. managers.localization:text("crimdawn_client_first_saw")
-    DataChanged = true
-  end
+  if self.data["OVE9000 Saw"] > Global.CrimDawn.data.x.saws then
+    CrimDawn.Log(FileIdent, "Unlocking random saw")
 
-  if Global.CrimDawn.data.x.saws == 1 and self.data["OVE9000 Saw"] == 2 then
-    CrimDawn.Log(FileIdent, "Unlocking second saw")
-    Global.CrimDawn.data.unlocks.saw = true
-    if not Global.upgrades_manager.aquired.saw then managers.upgrades:aquire("saw") end
-    Global.CrimDawn.data.unlocks.saw_secondary = true
-    if not Global.upgrades_manager.aquired.saw_secondary then managers.upgrades:aquire("saw_secondary") end
-    Global.CrimDawn.data.x.saws = 2
-    ItemLog = ItemLog .. managers.localization:text("crimdawn_client_second_saw")
-    DataChanged = true
+    local saws = { "saw", "saw_secondary" }
+    if managers.dlc:is_dlc_unlocked("esp") then table.insert(saws, "laser_watch") end
+
+    for i = #saws, 1, -1 do
+      if Global.CrimDawn.data.unlocks[saws[i]] then table.remove(saws, i) end
+    end
+
+    Global.CrimDawn.data.x.saws = self.data["OVE9000 Saw"]
+
+    if #saws ~= 0 then
+      local ChosenSaw = saws[#saws]
+      Global.CrimDawn.data.unlocks[ChosenSaw] = true
+      managers.upgrades:aquire(ChosenSaw)
+      ItemLog = ItemLog .. managers.localization:text("crimdawn_client_" .. ChosenSaw)
+      DataChanged = true
+    end
   end
 
   -- Deployables

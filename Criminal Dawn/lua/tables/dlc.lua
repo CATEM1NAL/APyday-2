@@ -45,10 +45,10 @@ local dlc_content = {
   gage_pack_assault = { famas = primary, galil = primary, g3 = primary, gre_m79 = primary,
                         bayonet = melee, bullseye = melee, dingdong = melee, x46 = melee },
 
-  -- Hotline Miami (Game Ownership)
+  -- Hotline Miami (game)
   hlm_game = { briefcase = melee },
 
-  -- Hotline Miami (Heist)
+  -- Hotline Miami (heist)
   hl_miami = { cd_miami1 = heist.tier3, cd_miami2 = heist.tier4, mia = heist.dlc,
                scorpion = secondary, tec9 = secondary, uzi = secondary,
                bat = melee, cleaver = melee, fireaxe = melee, machete = melee },
@@ -57,6 +57,9 @@ local dlc_content = {
   gage_pack_historical = { mosin = primary, mg42 = primary,
                            c96 = secondary, sterling = secondary,
                            fairbair = melee, freedom = melee, model24 = melee, swagger = melee },
+
+  -- Alienware Alpha Mauler
+  alienware_alpha_promo = { alien_maul = melee },
 
   -- Clover Character Pack
   character_pack_clover = { l85a2 = primary,
@@ -284,16 +287,17 @@ local dlc_content = {
   -- McShay Weapon Pack 4
   pxp4 = { supernova = primary, kacchainsaw = primary, awp = primary },
 
-  -- Alienware Alpha Mauler
-  alienware_alpha_promo = { alien_maul = melee }
+  -- Espionage Weapon Pack
+  esp = { x_pmm = akimbo,
+          pmm = secondary, speen = secondary, dart = secondary },
 }
 
 -- To avoid distributing unowned content, test for a DLC unlocker
-if WinSteamDLCManager:_check_dlc_data(tostring(os.time())) or
-   WinEpicDLCManager:_check_dlc_data(tostring(os.time())) or
-   WINDLCManager:_check_dlc_data(tostring(os.time())) then
-     CrimDawn.Log(FileIdent, "Found DLC unlocker")
-     Global.CrimDawn.DLC = true
+local DLCIndex = {}
+for dlc, _ in pairs(dlc_content) do table.insert(DLCIndex, dlc) end
+local FakeDLC = DLCIndex[math.random(#DLCIndex)] .. math.random(4)
+if managers.dlc:_check_dlc_data(FakeDLC) then Global.CrimDawn.DLC = true
+  CrimDawn.Log(FileIdent, "Found DLC unlocker")
 end
 
 if not Global.CrimDawn.DLC then -- Only apply DLC if ownership can be verified
