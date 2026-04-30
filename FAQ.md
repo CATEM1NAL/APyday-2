@@ -128,10 +128,16 @@ Set the key to whatever you want, and now you can see the full list at any time!
 You also get a deployable upgrade for each deployable you have unlocked (up to 9 upgrades).
 
 ### The fuck is a Perma-Skill/Perk?
-Basically a progressive line of upgrades. The perma-perks are the universal perk cards (with the
-final one being an upgraded Walk-In Closet (which is actually just Fully Loaded)). The perma-skills
-are organised in such a way that they give you generally useful abilities, for example the second
-perma-skill allows you to bag bodies and the third perma-skill allows you to intimidate cops.
+A progressive line of upgrades, giving you generally applicable bonuses:
+
+**Perma-Skills** / **Perma-Perks**
+1. **Cat Burglar**: Falls inflict armor damage. / **Blending-In**: +1 concealment.
+2. **Cleaner**: Bag bodies. / **Second Skin**: 15% reduced armor speed penalty.
+3. **Dominator**: Intimidate non-special enemies. / **Aggressor**: 5% damage bonus.
+4. **Drop Cloth**: Enemy death alert range reduced by 95%. / **Walk-in Closet Lv1**: Ammo pickup increased by 35%.
+5. **Toolkit**: Repair drills and saws 25% faster. / **Helmet Popping**: 25% headshot damage bonus.
+6. **Die Hard**: 50% damage reduction while interacting. / **Triage**: 20% faster doctor bag interactions.
+7. **Jack of all Trades**: Hold two deployables. Interact with them twice as fast. / **Walk-in Closet Lv2**: Ammo pickup increased by 75%.
 
 ### Those are some weird numbers.
 I was leaning into PAYDAY 2's playing card motif, so the perks and skills add up to 21 each.
