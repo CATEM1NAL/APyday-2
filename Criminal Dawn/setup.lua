@@ -142,7 +142,7 @@ function CrimDawn:Init()
       if ReqItems > state.progression_items + 1 then return (i - 1) * i / 2 end
     end
 
-  return state.max_score_checks * (state.max_score_checks - 1) / 2 end
+  return state.max_score_checks * (state.max_score_checks + 1) / 2 end
 
   function self.IsScoreCapped(points)
     local NewScore = Global.CrimDawn.data.game.score + points

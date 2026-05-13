@@ -39,6 +39,9 @@ Hooks:PostHook(GameSetup, "init_finalize", "CrimDawn_GameSetupInit", function()
     run = { func_sequence_034 = "on_executed", func_sequence_033 = "on_executed",
             func_sequence_032 = "on_executed", func_sequence_031 = "on_executed", },
     mallcrasher = { delay = "on_executed" },
+    spa = { picklock_timer = "timer", after_20sec = "time", after_30sec = "time", after_40sec = "time" },
+    mad = { set_EMP_timer_001 = "time", scan_timer = "timer" },
+    bph = { control_room_timer = "timer" },
   }
 
   local TimerMult = math.min(Global.CrimDawn.data.game.progression_items * 2, 99)
