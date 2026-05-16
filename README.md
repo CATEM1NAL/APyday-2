@@ -32,7 +32,7 @@ receiving anything. There are also checks locked behind upgrading the safe house
 ## Is this multiplayer compatible?
 There wouldn't be much point if it wasn't! Ignoring the obvious argument I could make about how Archipelago is inherently multiplayer
 (which is a bullshit non-answer), the mod was built to support multiplayer basically from the start. For more details about this and
-how it works, please refer to the [FAQ](https://github.com/CATEM1NAL/PD2-Criminal-Dawn/blob/main/FAQ.md#is-this-multiplayer).
+how it works, please refer to the [wiki](https://github.com/CATEM1NAL/PD2-Criminal-Dawn/wiki).
 
 ---
 [FAQ](https://github.com/CATEM1NAL/PD2-Criminal-Dawn/blob/main/FAQ.md) • [APWorld Repo](https://github.com/CATEM1NAL/Archipelago/tree/payday2) • [My Other Stuff](https://ema.stupidcat.uk/)
