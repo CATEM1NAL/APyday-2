@@ -7,7 +7,7 @@ PAYDAY 2 mod that turns the game into a multiworld roguelite, powered by [Archip
 Strips out a lot of PAYDAY 2's core skill/perk building mechanics in favour of randomly generated builds and random weapon unlocks!
 This helps keep the game fresh even for players that have exhausted everything the game has to offer, and gives access to impossible
 perk combos that would never be useable in the vanilla game. On top of this,
-[the core gameplay has been *drastically* reworked](https://github.com/CATEM1NAL/PD2-Criminal-Dawn/blob/main/FAQ.md#are-there-any-core-gameplay-changes-i-should-know-about)
+[the core gameplay has been *drastically* reworked](https://github.com/CATEM1NAL/PD2-Criminal-Dawn/wiki/Gameplay#changes-from-vanilla)
 to be an experience closer to something like PAYDAY: The Heist or PAYDAY 3, while still scaling up to the power fantasy of vanilla
 PAYDAY 2 in the late-game. Turning the game into a roguelite also provides a solution to the number one problem: what's the goal?
 
