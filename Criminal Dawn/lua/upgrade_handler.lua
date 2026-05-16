@@ -73,8 +73,8 @@ Hooks:PreHook(PlayerManager, "aquire_default_upgrades", "CrimDawn_DefaultUpgrade
 end)
 
 Hooks:OverrideFunction(PlayerManager, "_dodge_replenish_armor", function(self)
-  local armour = self:player_unit():character_damage():_max_armor() * 0.1
-  self:player_unit():character_damage():restore_armor(armour)
+  --local armour = self:player_unit():character_damage():_max_armor() * 0.1
+  self:player_unit():character_damage():restore_health(2)
 end)
 
 Hooks:OverrideFunction(PlayerManager, "health_skill_addend", function(self)

@@ -108,7 +108,7 @@ function CrimDawn:Init()
     if RunLength == 0 then RunLength = 6 end
     if max_value then RunLength = max_value end
 
-    local MaxDiff = ignore_settings and Global.CrimDawn.data.game.run_length or CrimDawn.SettingsData.diff_cap
+    local MaxDiff = ignore_settings and RunLength or CrimDawn.SettingsData.diff_cap
     local ItemCount = Global.CrimDawn.data.game.progression_items
     local MaxItems = Global.CrimDawn.data.game.max_progression_items
 
@@ -292,7 +292,7 @@ for i = 0, 6 do -- Safehouse frames
 end
 
 -- Background replacements
-DB:create_entry(Idstring("texture"), Idstring("guis/textures/loading/loading-bg"), CrimDawn.ModPath .. "assets/bg/loading.texture")
+--DB:create_entry(Idstring("texture"), Idstring("guis/textures/loading/loading-bg"), CrimDawn.ModPath .. "assets/bg/loading.texture")
 DB:create_entry(Idstring("texture"), Idstring("guis/textures/pd2/menu_backdrop/bd_baselayer"), CrimDawn.ModPath .. "assets/bg/briefing.texture")
 
 -- Drill

@@ -46,6 +46,11 @@ Hooks:PostHook(GameSetup, "init_finalize", "CrimDawn_GameSetupInit", function()
     welcome_to_the_jungle_2 = { noGas = "on_executed", needsToFuel = "on_executed", isFueling = "on_executed", doneRefuel = "on_executed",
                                 ["240"] = "on_executed", ["210"] = "on_executed", ["180"] = "on_executed", ["150"] = "on_executed",
                                 ["120"] = "on_executed", ["90"] = "on_executed", ["60"] = "on_executed" },
+    vit = { objective_started026 = "on_executed" },
+    pbr2 = { flyinfwd_show = "on_executed" },
+    sah = { set_timer = "time" },
+    hvh = { timer_add_time = "time" },
+    deep = { trigger_pressure_obj = "time" },
 
     arm_hcm = { logic_link_021 = "on_executed", logic_link_022 = "on_executed",
                 logic_link_023 = "on_executed", logic_link_024 = "on_executed" },

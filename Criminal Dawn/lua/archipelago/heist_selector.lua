@@ -45,24 +45,19 @@ function CrimDawn:NextHeist(HeistsWon)
     assert(NextHeist ~= nil, "no available heists, are they all disabled?")
 
   -- If we HAVE won then ignore heist tiering
-  else local ValidTiers = { "tier1", "tier2", "tier3", "tier4", "tier5", "tier6" }
-    local NextTier = math.random(1, 6)
-
-    while not NextHeist do
-      CurrentTier = ValidHeists[ValidTiers[NextTier]]
-      NextHeist = CurrentTier[math.random(#CurrentTier)]
-      if NextHeist then break end
-      table.remove(ValidTiers, NextTier)
-      NextTier = math.random(#ValidTiers)
-      assert(#ValidTiers > 0, "you have beaten every possible heist. please do something else")
+  else local AllValidHeists = {}
+    for _, tier in pairs(ValidHeists) do
+      for _, heist in ipairs(tier) do table.insert(AllValidHeists, heist) end
     end
+
+    assert(#AllValidHeists > 0, "there are no heists left. maybe you should do something else?")
+    NextHeist = AllValidHeists[math.random(#AllValidHeists)]
   end
 
   table.insert(Global.CrimDawn.data.game.heists, NextHeist)
-  NextHeist = Global.CrimDawn.data.game.heists[#Global.CrimDawn.data.game.heists]
+  --NextHeist = Global.CrimDawn.data.game.heists[#Global.CrimDawn.data.game.heists]
 
-  self.Log(FileIdent, NextHeist)
-  self:WriteSave(FileIdent, "next heist selected")
+  self:WriteSave(FileIdent, "next heist selected [" .. managers.localization:text("heist_" .. NextHeist) .. "]")
 end
 
 local campaigns = {
@@ -77,7 +72,8 @@ local campaigns = {
   ["Holiday Special"] = { "pines", "cane", "moon" },
   ["Classics"] = { "red2", "run", "flat", "glace", "dah", "dinner" },
   ["You Guys No Fun"] = { "four_stores", "mallcrasher", "nightclub", "jolly", "shoutout_raid" },
-  ["Follow The Money"] = { "branchbank_cash", "roberts", "brb", "bex", "red2", "big" }
+  ["Follow The Money"] = { "branchbank_cash", "roberts", "brb", "bex", "red2", "big" },
+  ["Political Sabotage"] = { "cd_bigoil", "cd_frame3", "cd_erection2" }
 }
 
 function CrimDawn:CampaignHeist(HeistsWon)
