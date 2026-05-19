@@ -129,6 +129,7 @@ Hooks:Add("MenuManagerBuildCustomMenus", "CrimDawn_MenuTweaks", function(menu_ma
   -- Main Menu
   if mainmenu ~= nil then
     managers.localization:load_localization_file(CrimDawn.SavePath .. "crimdawn_rooms.txt")
+    CrimDawnClient:PollProgression()
 
     if Global.CrimDawn.PostBoot then
       DelayedCalls:Add("CrimDawn_MenuPoll", 1, function() CrimDawnClient:PollData() end)
