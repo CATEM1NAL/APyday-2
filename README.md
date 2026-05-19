@@ -1,7 +1,7 @@
 # PAYDAY 2: Criminal Dawn
 PAYDAY 2 mod that turns the game into a multiworld roguelite, powered by [Archipelago](https://archipelago.gg).
 
-[FAQ](https://github.com/CATEM1NAL/PD2-Criminal-Dawn/blob/main/FAQ.md) • [APWorld Repo](https://github.com/CATEM1NAL/Archipelago/tree/payday2) • [My Other Stuff](https://ema.stupidcat.uk/)
+[Wiki](https://github.com/CATEM1NAL/PD2-Criminal-Dawn/wiki) • [APWorld Repo](https://github.com/CATEM1NAL/Archipelago/tree/payday2) • [My Other Stuff](https://ema.stupidcat.uk/)
 
 ## What does this do?
 Strips out a lot of PAYDAY 2's core skill/perk building mechanics in favour of randomly generated builds and random weapon unlocks!
@@ -35,4 +35,4 @@ There wouldn't be much point if it wasn't! Ignoring the obvious argument I could
 how it works, please refer to the [wiki](https://github.com/CATEM1NAL/PD2-Criminal-Dawn/wiki).
 
 ---
-[FAQ](https://github.com/CATEM1NAL/PD2-Criminal-Dawn/blob/main/FAQ.md) • [APWorld Repo](https://github.com/CATEM1NAL/Archipelago/tree/payday2) • [My Other Stuff](https://ema.stupidcat.uk/)
+[Wiki](https://github.com/CATEM1NAL/PD2-Criminal-Dawn/wiki) • [APWorld Repo](https://github.com/CATEM1NAL/Archipelago/tree/payday2) • [My Other Stuff](https://ema.stupidcat.uk/)
