@@ -3,7 +3,7 @@ local script = managers.mission._scripts.default._elements
 local level = managers.job:current_level_id() or "nil"
 CrimDawn.Log(FileIdent, "Level ID: " .. level)
 
-local TimerTweaks = { big = {},
+local TimerTweaks = { big = { start_timer = "time", set_time_normal = "time", set_time_reduced = "time" },
 
   -- Mandatory meth cooking
   alex_1 = { reChance = "on_executed" }, -- Rats day 1
@@ -33,16 +33,29 @@ local TimerTweaks = { big = {},
   moon = { wait_start = "on_executed", bile_there_in_1_min = "on_executed", bile_30s = "on_executed" }, -- Stealing Xmas
   pex = { hacking_timer = "timer", timer = "timer", delay = "base_delay" }, -- Breakfast in Tijuana
   vit = { objective_started026 = "on_executed", delay_thermite = "on_executed" }, -- White House
-  pbr2 = { flyinfwd_show = "on_executed" }, -- Birth of Sky
-  sah = { set_timer = "time" }, -- Shacklethorne Auction
+  pbr2 = { flyinfwd_show = "on_executed", waiting_time = "timer" }, -- Birth of Sky
+  sah = { set_timer = "time", enable_west_helicopter_input = "on_executed", enable_east_helicopter_input = "on_executed" }, -- Shacklethorne Auction
   hvh = { timer_add_time = "time" }, -- Cursed Kill Room
-  deep = { trigger_pressure_obj = "time" }, -- Crude Awakening
+  deep = { logic_timer_oil_loud = "timer", logic_timer_oil_stealth = "timer" }, -- Crude Awakening
   election_day_3 = { backup_started_link = "on_executed", ["50"] = "on_executed", ["40"] = "on_executed", ["30"] = "on_executed" },
   kenaz = { ["set time 6"] = "time", ["set time 5"] = "time", ["drilling time"] = "timer", ["set time 3"] = "time" }, -- Golden Grin
   hox_2 = { time001 = "on_executed", time002 = "on_executed", time003 = "on_executed", time004 = "on_executed" }, -- Hoxton Breakout day 2
   jolly = { ["Link - delay"] = "on_executed", plt_as1_01 = "on_executed", plt_as1_02 = "on_executed", plt_as1_04 = "on_executed" }, -- Aftershock
-  nmh = { success = "on_executed", interacted_with_correct_sample = "on_executed", fail = "on_executed", seq_fail = "on_executed" }, -- No Mercy
+  nmh = { success = "on_executed", interacted_with_correct_sample = "on_executed", fail = "on_executed",
+          seq_fail = "on_executed", relay = "on_executed" }, -- No Mercy
   chca = { pulling_timer = "timer" }, -- Black Cat
+  flat = { sniper_spawn_loop = "on_executed", heli_loop_restart = "on_executed",
+           started = "on_executed", ["helicopter drops bag"] = "on_executed" }, -- Panic Room
+  glace = { set_plane_time_after_miss = "time", plane_timer = "timer" }, -- Green Bridge
+
+  -- Undercover
+  man = { intro_anyways_30s = "on_executed", intro_anyways_40s = "on_executed", intro_anyways_50s = "on_executed",
+          intro_anyways_60s = "on_executed", intro_anyways_70s = "on_executed", },
+
+  -- Henry's Rock
+  des = { crane_timer = "timer", correct001 = "on_executed", correct002 = "on_executed", correct003 = "on_executed", correct004 = "on_executed",
+          wrong001 = "on_executed", wrong002 = "on_executed", wrong003 = "on_executed", wrong004 = "on_executed", shutdown = "on_executed",
+          true001 = "on_executed", true002 = "on_executed", true003 = "on_executed", true004 = "on_executed" },
 
   -- The Diamond
   mus = { timelock = "timer", logic_timer_operator_001 = "time", time001 = "on_executed", time002 = "on_executed",
@@ -124,7 +137,7 @@ if TimerTweaks[level] then
     for BaseElementName, BaseElement in pairs(script) do
       if BaseElement._editor_name == ElementName and BaseElement._values[ElementValue] then
         CrimDawn.Log(FileIdent, "Found mission element " .. ElementName)
-        --Utils.PrintTable(BaseElement, 2)
+        --Utils.PrintTable(BaseElement._values, 2)
 
         if Values[ElementValue] and BaseElement._values[ElementValue] then
           BaseElement._values[ElementValue] = BaseElement._values[ElementValue] * TimerMult
@@ -133,11 +146,15 @@ if TimerTweaks[level] then
         elseif ElementValue == "on_executed" then
           for _, ExecutedElement in ipairs(BaseElement._values.on_executed) do
             ExecutedElement.delay = ExecutedElement.delay * TimerMult
-          end break
+            if ExecutedElement.delay_rand then ExecutedElement.delay_rand = ExecutedElement.delay_rand * TimerMult end
+          end
+          --Utils.PrintTable(BaseElement._values.on_executed, 2)
 
         elseif ElementValue == "timer" and BaseElement._timer then
-          BaseElement._values.timer = BaseElement._values.timer * TimerMult
-          BaseElement._timer = BaseElement._timer * TimerMult
+          if BaseElement._values.timer and type(BaseElement._values.timer) == "table" then -- Green Bridge plane timer is a table.
+            for _, time in ipairs(BaseElement._values.timer) do time = time * TimerMult end -- ...for some reason.
+          else BaseElement._values.timer = BaseElement._values.timer * TimerMult end
+          if BaseElement._timer then BaseElement._timer = BaseElement._timer * TimerMult end
         end
 
       end

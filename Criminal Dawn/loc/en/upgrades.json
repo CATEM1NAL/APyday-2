@@ -384,7 +384,7 @@
   "cd_doctor_bag_capacity_1_name": "Field Surgeon Lv1", "cd_doctor_bag_capacity_1_desc": "2 doctor bags.",
   "cd_doctor_bag_capacity_2_name": "Field Surgeon Lv2", "cd_doctor_bag_capacity_2_desc": "4 doctor bags.",
   "cd_doctor_bag_charges_name": "Blood Bank", "cd_doctor_bag_charges_desc": "Doctor bags get one additional charge.",
-  "cd_health_deployable_buff_name": "Quick Fix", "cd_health_deployable_buff_desc": "Your FAKs and doctor bags give 10% damage reduction for 2 mins on use.\nDeploy FAKs and doctor bags 50% faster.",
+  "cd_health_deployable_buff_name": "Quick Fix", "cd_health_deployable_buff_desc": "Your FAKs and doctor bags give 10% damage reduction for 2 mins on use. Deploy FAKs and doctor bags 50% faster.",
   "cd_fak_capacity_1_name": "Walking Pharmacy Lv1", "cd_fak_capacity_1_desc": "7 FAKs.",
   "cd_fak_capacity_2_name": "Walking Pharmacy Lv2", "cd_fak_capacity_2_desc": "14 FAKs.",
   "cd_fak_restore_down_name": "Life Saving Drugs", "cd_fak_restore_down_desc": "Your FAKs have a 50% chance to restore a down on use.", 

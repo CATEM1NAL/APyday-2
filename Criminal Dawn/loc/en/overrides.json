@@ -46,4 +46,6 @@
   "dialog_abort_mission_text" : "You are about to return to the lobby.\n\nDoing this will reset your current run and re-roll your upgrades!",
   "menu_end_game" : "There is no escape",
   "menu_infamy_go_infamous_error_money" : "You need $200,000,000 in offshore.",
+  "menu_asset_lock_buy_bodybags_asset" : "Requires the 'Inside Man' skill!",
+  "menu_asset_lock_additional_assets" : "Requires the 'Inside Man' skill!",
 }

@@ -26,7 +26,7 @@
   "crimdawn_diff_scaling" : "On + Item Scaling",
   "crimdawn_inverse_scaling" : "Inverted Scaling",
   "crimdawn_lethal_deathlink" : "Lethal Death Link",
-  "crimdawn_lethal_deathlink_desc" : "Whether death link can send you into custody.",
+  "crimdawn_lethal_deathlink_desc" : "Whether death link can send you into custody on 0 downs.",
   "crimdawn_heist1_settings_name" : "Heists (Tier 1)",
   "crimdawn_heist1_settings_desc" : "Enable or disable heists in the first tier (first heist with run length 6).",
   "crimdawn_heist2_settings_name" : "Heists (Tier 2)",

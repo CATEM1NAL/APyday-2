@@ -93,7 +93,7 @@ function CrimDawn:RandomUpgrade(count, table_name)
 
     -- Give player random upgrade
     if next(WorkingTable) then
-      Utils.PrintTable(WorkingTable)
+      --Utils.PrintTable(WorkingTable)
       local UpgradeIndex = math.random(#WorkingTable)
       table.insert(Global.CrimDawn.data.upgrades, table_name .. "-" .. WorkingTable[UpgradeIndex])
       self.Log(FileIdent, "Added " .. WorkingTable[UpgradeIndex] .. " to upgrade table")
